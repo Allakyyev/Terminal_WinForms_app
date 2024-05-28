@@ -55,13 +55,13 @@
             this.button_decline_phone_number = new System.Windows.Forms.Button();
             this.button_confirm_phone_number = new System.Windows.Forms.Button();
             this.panel_accept_payment = new System.Windows.Forms.Panel();
-            this.label_accept_bill_total = new System.Windows.Forms.Label();
-            this.label_accept_bill_phone = new System.Windows.Forms.Label();
-            this.button_accept_bill_pay = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button_accept_bill_pay = new System.Windows.Forms.Button();
+            this.label_accept_bill_phone = new System.Windows.Forms.Label();
+            this.label_accept_bill_total = new System.Windows.Forms.Label();
             this.panel_success = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -138,7 +138,8 @@
             // 
             // timer2
             // 
-            this.timer2.Interval = 3000;
+            this.timer2.Interval = 60000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // panelInputPhoneNumber
             // 
@@ -321,16 +322,14 @@
             this.panel_accept_payment.Name = "panel_accept_payment";
             this.panel_accept_payment.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_accept_payment_Paint);
             // 
-            // label_accept_bill_total
+            // button2
             // 
-            resources.ApplyResources(this.label_accept_bill_total, "label_accept_bill_total");
-            this.label_accept_bill_total.Name = "label_accept_bill_total";
-            // 
-            // label_accept_bill_phone
-            // 
-            resources.ApplyResources(this.label_accept_bill_phone, "label_accept_bill_phone");
-            this.label_accept_bill_phone.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label_accept_bill_phone.Name = "label_accept_bill_phone";
+            this.button2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button_accept_bill_pay
             // 
@@ -341,14 +340,16 @@
             this.button_accept_bill_pay.UseVisualStyleBackColor = false;
             this.button_accept_bill_pay.Click += new System.EventHandler(this.button_accept_bill_pay_Click);
             // 
-            // button2
+            // label_accept_bill_phone
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.WindowFrame;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            resources.ApplyResources(this.label_accept_bill_phone, "label_accept_bill_phone");
+            this.label_accept_bill_phone.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label_accept_bill_phone.Name = "label_accept_bill_phone";
+            // 
+            // label_accept_bill_total
+            // 
+            resources.ApplyResources(this.label_accept_bill_total, "label_accept_bill_total");
+            this.label_accept_bill_total.Name = "label_accept_bill_total";
             // 
             // panel_success
             // 
@@ -359,19 +360,19 @@
             this.panel_success.Name = "panel_success";
             this.panel_success.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label3
-            // 
-            this.label3.AllowDrop = true;
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Name = "label3";
-            // 
             // label4
             // 
             this.label4.AllowDrop = true;
             resources.ApplyResources(this.label4, "label4");
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Name = "label4";
+            // 
+            // label3
+            // 
+            this.label3.AllowDrop = true;
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Name = "label3";
             // 
             // Form1
             // 

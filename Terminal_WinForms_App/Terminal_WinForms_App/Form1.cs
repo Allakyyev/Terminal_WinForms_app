@@ -49,6 +49,7 @@ namespace Terminal_WinForms_App {
         }
         public Panels currentPanel = Panels.Main;
         public void switchToPanel(Panels panelName) {
+            timer2.Stop();
             panelInputPhoneNumber.Visible = false;
             panelMain.Visible = false;
             panel_actions.Visible = false;
@@ -83,10 +84,12 @@ namespace Terminal_WinForms_App {
                 case Panels.Success:
                     panel_success.Visible = true;
                     panel_success.BringToFront();
+                    currentPanel = Panels.AcceptPayment;
                     Thread.Sleep(5000);
                     switchToPanel(Panels.Main);
                     break;
             }
+            timer2.Start();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e) {
@@ -242,6 +245,13 @@ namespace Terminal_WinForms_App {
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e) {
+        }
+
+        private void timer2_Tick(object sender, EventArgs e) {
+            if(this.cashCodeValidatorService.CollectedMoneySum <= 0) {
+                this.cashCodeValidatorService.DisableBillValidatorCommand();
+                switchToPanel(Panels.Main);
+            }
         }
     }
 }

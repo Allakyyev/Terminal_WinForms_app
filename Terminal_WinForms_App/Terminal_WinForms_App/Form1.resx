@@ -1215,65 +1215,35 @@
   <data name="&gt;&gt;panel_accept_payment.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label_accept_bill_total.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 30pt</value>
   </data>
-  <data name="label_accept_bill_total.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 60pt</value>
-  </data>
-  <data name="label_accept_bill_total.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 169</value>
-  </data>
-  <data name="label_accept_bill_total.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 114</value>
-  </data>
-  <data name="label_accept_bill_total.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label_accept_bill_total.Text" xml:space="preserve">
-    <value>0 TMT</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_total.Name" xml:space="preserve">
-    <value>label_accept_bill_total</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_total.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_total.Parent" xml:space="preserve">
-    <value>panel_accept_payment</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_total.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label_accept_bill_phone.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label_accept_bill_phone.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 44pt</value>
-  </data>
-  <data name="label_accept_bill_phone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label_accept_bill_phone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 35</value>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 476</value>
   </data>
-  <data name="label_accept_bill_phone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 84</value>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 116</value>
   </data>
-  <data name="label_accept_bill_phone.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
-  <data name="&gt;&gt;label_accept_bill_phone.Name" xml:space="preserve">
-    <value>label_accept_bill_phone</value>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Главная</value>
   </data>
-  <data name="&gt;&gt;label_accept_bill_phone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
   </data>
-  <data name="&gt;&gt;label_accept_bill_phone.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
     <value>panel_accept_payment</value>
   </data>
-  <data name="&gt;&gt;label_accept_bill_phone.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="button_accept_bill_pay.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
@@ -1305,35 +1275,65 @@
   <data name="&gt;&gt;button_accept_bill_pay.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 30pt</value>
+  <data name="label_accept_bill_phone.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label_accept_bill_phone.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 44pt</value>
+  </data>
+  <data name="label_accept_bill_phone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 476</value>
+  <data name="label_accept_bill_phone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 35</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 116</value>
+  <data name="label_accept_bill_phone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 84</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="label_accept_bill_phone.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Главная</value>
+  <data name="&gt;&gt;label_accept_bill_phone.Name" xml:space="preserve">
+    <value>label_accept_bill_phone</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;label_accept_bill_phone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label_accept_bill_phone.Parent" xml:space="preserve">
     <value>panel_accept_payment</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label_accept_bill_phone.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_accept_bill_total.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_accept_bill_total.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 60pt</value>
+  </data>
+  <data name="label_accept_bill_total.Location" type="System.Drawing.Point, System.Drawing">
+    <value>424, 169</value>
+  </data>
+  <data name="label_accept_bill_total.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 114</value>
+  </data>
+  <data name="label_accept_bill_total.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="label_accept_bill_total.Text" xml:space="preserve">
+    <value>0 TMT</value>
+  </data>
+  <data name="&gt;&gt;label_accept_bill_total.Name" xml:space="preserve">
+    <value>label_accept_bill_total</value>
+  </data>
+  <data name="&gt;&gt;label_accept_bill_total.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_accept_bill_total.Parent" xml:space="preserve">
+    <value>panel_accept_payment</value>
+  </data>
+  <data name="&gt;&gt;label_accept_bill_total.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -1380,36 +1380,6 @@
   <data name="&gt;&gt;panel_success.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 30pt</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 213</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 58</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Операция успешно завершена,</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel_success</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1442,6 +1412,36 @@
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 30pt</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 213</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 58</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Операция успешно завершена,</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panel_success</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
