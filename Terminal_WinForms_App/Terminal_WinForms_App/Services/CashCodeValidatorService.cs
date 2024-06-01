@@ -108,9 +108,14 @@ namespace Terminal_WinForms_App.Services {
                 return false;
             }
             if(_cacheCodeValidator.IsConnected) {
-                _cacheCodeValidator.PowerUp();
-                _cacheCodeValidator.StartListening();
-                return true;
+                try {
+                    _cacheCodeValidator.PowerUp();
+                    _cacheCodeValidator.StartListening();
+                    return true;
+                }catch(Exception e) {
+                    logginService.LogError($"Could not connect to Cache Validator with port {BillValidatorPort}");
+                    return false;
+                }
             } else {
                 logginService.LogWarning($"Could not connect to Cache Validator with port {BillValidatorPort}");
                 return false; 
