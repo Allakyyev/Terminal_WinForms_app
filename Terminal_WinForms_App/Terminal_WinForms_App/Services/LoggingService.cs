@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Terminal_WinForms_App.Services {
+﻿namespace Terminal_WinForms_App.Services {
     public enum LogStatus {
         Info = 1,
         Warning = 2,
@@ -12,9 +6,8 @@ namespace Terminal_WinForms_App.Services {
     }
     public class LoggingService {
         private BackEndRequestService backEndRequestService;
-        public LoggingService(BackEndRequestService backEndRequestService)
-        {
-           this.backEndRequestService = backEndRequestService;
+        public LoggingService(BackEndRequestService backEndRequestService) {
+            this.backEndRequestService = backEndRequestService;
         }
 
         public void LogError(string message) {
