@@ -379,13 +379,13 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
-            this.Controls.Add(this.panel_success);
-            this.Controls.Add(this.panel_accept_payment);
-            this.Controls.Add(this.panel_confirm_number);
             this.Controls.Add(this.panelInputPhoneNumber);
             this.Controls.Add(this.panel_actions);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.panel_success);
+            this.Controls.Add(this.panel_accept_payment);
+            this.Controls.Add(this.panel_confirm_number);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

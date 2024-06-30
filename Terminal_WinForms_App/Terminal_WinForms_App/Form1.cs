@@ -23,7 +23,7 @@ namespace Terminal_WinForms_App {
             this.terminal_Id = terminalId;
             this.terminal_Key = terminalKey;
             this.baseUri = baseUri;
-            backEndRequestService = new BackEndRequestService(baseUri);
+            backEndRequestService = new BackEndRequestService(baseUri, terminalId, terminalKey);
             this.loggingService = new LoggingService(backEndRequestService);
             this.cashCodeValidatorService = new CashCodeValidatorService(comPort, loggingService); ;
             InitializeComponent();
@@ -191,13 +191,13 @@ namespace Terminal_WinForms_App {
             switchToPanel(Panels.Main);
         }
 
-        private void button_confirm_phone_number_Click(object sender, EventArgs e) {
-            string phoneNumber = label_confirm_phone_number.Text.Replace("+993", "");
+        private async void button_confirm_phone_number_Click(object sender, EventArgs e) {
+            string phoneNumber = label_confirm_phone_number.Text.Replace("+993", "993");
             phoneNumber = phoneNumber.Replace("-", "");
             phoneNumber = phoneNumber.Replace("_", "");
             phoneNumber = phoneNumber.Replace(" ", "");
             if(cashCodeValidatorService.ConnectCommand() && cashCodeValidatorService.EnableBillValidatorCommand()) {
-                bool checkPhoneValidity = backEndRequestService.CheckPhoneNumberRequest(phoneNumber);
+                bool checkPhoneValidity = await backEndRequestService.CheckPhoneNumberRequest(phoneNumber);
                 if(checkPhoneValidity) {
                     label_accept_bill_phone.Text = label_confirm_phone_number.Text;
                     switchToPanel(Panels.AcceptPayment);
