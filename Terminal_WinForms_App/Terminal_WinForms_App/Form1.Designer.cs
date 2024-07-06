@@ -338,7 +338,7 @@
             this.button_accept_bill_pay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_accept_bill_pay.Name = "button_accept_bill_pay";
             this.button_accept_bill_pay.UseVisualStyleBackColor = false;
-            this.button_accept_bill_pay.Click += new System.EventHandler(this.button_accept_bill_pay_Click);
+            this.button_accept_bill_pay.Click += new System.EventHandler(this.button_accept_bill_pay_ClickAsync);
             // 
             // label_accept_bill_phone
             // 
@@ -354,8 +354,8 @@
             // panel_success
             // 
             this.panel_success.BackColor = System.Drawing.Color.Green;
-            this.panel_success.Controls.Add(this.label4);
             this.panel_success.Controls.Add(this.label3);
+            this.panel_success.Controls.Add(this.label4);
             resources.ApplyResources(this.panel_success, "panel_success");
             this.panel_success.Name = "panel_success";
             this.panel_success.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
@@ -379,13 +379,13 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
-            this.Controls.Add(this.panelInputPhoneNumber);
             this.Controls.Add(this.panel_actions);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel_success);
             this.Controls.Add(this.panel_accept_payment);
             this.Controls.Add(this.panel_confirm_number);
+            this.Controls.Add(this.panelInputPhoneNumber);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

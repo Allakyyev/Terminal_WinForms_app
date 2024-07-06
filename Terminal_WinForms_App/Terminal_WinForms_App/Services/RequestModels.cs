@@ -35,8 +35,7 @@ namespace Terminal_WinForms_App.Services {
         [DataMember(Name = "msisdnEncrypted")]
         public  string MsisdnEncrypted { get; set; }
 
-        public string Msisdn { get; set; }
-        public long TerminalId { get; set; }
+        public string Msisdn { get; set; }        
     }
 
     [DataContract]

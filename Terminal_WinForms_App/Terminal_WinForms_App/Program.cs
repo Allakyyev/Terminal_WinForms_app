@@ -10,7 +10,7 @@ namespace Terminal_WinForms_App {
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static async Task Main() {
+        static void Main() {
             string terminalId = ConfigurationManager.AppSettings["TerminalId"];
             string terminalKey = ConfigurationManager.AppSettings["TerminalKey"];
             string baseUri = ConfigurationManager.AppSettings["BackendBaseUri"];

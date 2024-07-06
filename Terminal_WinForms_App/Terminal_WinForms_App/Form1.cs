@@ -196,14 +196,12 @@ namespace Terminal_WinForms_App {
             phoneNumber = phoneNumber.Replace("-", "");
             phoneNumber = phoneNumber.Replace("_", "");
             phoneNumber = phoneNumber.Replace(" ", "");
-            if(cashCodeValidatorService.ConnectCommand() && cashCodeValidatorService.EnableBillValidatorCommand()) {
-                bool checkPhoneValidity = await backEndRequestService.CheckPhoneNumberRequest(phoneNumber);
-                if(checkPhoneValidity) {
-                    label_accept_bill_phone.Text = label_confirm_phone_number.Text;
-                    switchToPanel(Panels.AcceptPayment);
-                } else {
-                    switchToPanel(Panels.PhoneInput);
-                }
+            bool checkPhoneValidity = await backEndRequestService.CheckPhoneNumberRequest(phoneNumber);
+            if(checkPhoneValidity && cashCodeValidatorService.ConnectCommand() && cashCodeValidatorService.EnableBillValidatorCommand()) {
+                label_accept_bill_phone.Text = label_confirm_phone_number.Text;
+                switchToPanel(Panels.AcceptPayment);
+            } else {
+                switchToPanel(Panels.PhoneInput);
             }
         }
 
@@ -230,16 +228,18 @@ namespace Terminal_WinForms_App {
             }
         }
 
-        private void button_accept_bill_pay_Click(object sender, EventArgs e) {
+        private async void button_accept_bill_pay_ClickAsync(object sender, EventArgs e) {
             this.cashCodeValidatorService.DisableBillValidatorCommand();
             if(this.cashCodeValidatorService.CollectedMoneySum <= 0) {
                 switchToPanel(Panels.Main);
             } else {
-                string phoneNumber = label_accept_bill_phone.Text.Replace("+993", "");
+                string phoneNumber = label_accept_bill_phone.Text.Replace("+993", "993");
                 phoneNumber = phoneNumber.Replace("-", "");
                 phoneNumber = phoneNumber.Replace("_", "");
                 phoneNumber = phoneNumber.Replace(" ", "");
-                backEndRequestService.MakePaymentRequest(phoneNumber, this.cashCodeValidatorService.CollectedMoneySum * 100);
+                var result = await backEndRequestService.MakePaymentRequest(phoneNumber, this.cashCodeValidatorService.CollectedMoneySum * 100);
+                // TODO 
+                // Check result.Success and take appropriate measures to tackle fail situation 
                 switchToPanel(Panels.Success);
             }
         }

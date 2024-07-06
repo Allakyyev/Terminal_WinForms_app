@@ -2,7 +2,6 @@
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text.Json;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Terminal_WinForms_App.Services {
@@ -11,8 +10,9 @@ namespace Terminal_WinForms_App.Services {
         string terminalId;
         string terminalIdEncrypted;
         string terminalPassword;
+        readonly string ServiceKey = "tmcell";
         LoggingService logger;
-        readonly HttpClient _httpClient;        
+        readonly HttpClient _httpClient;
         public BackEndRequestService(string baseUri, string terminalId, string terminalPassword) {
             this.baseUri = baseUri;
             this._httpClient = new HttpClient();
@@ -31,7 +31,7 @@ namespace Terminal_WinForms_App.Services {
             return JsonSerializer.Deserialize<string[]>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
         }
 
-        async Task<ForceAddAPIResponse> ForceAddTransactionAsync(ForceAddRequest forceAddRequest) {            
+        async Task<ForceAddAPIResponse> ForceAddTransactionAsync(ForceAddRequest forceAddRequest) {
             var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/force-add", forceAddRequest);
             response.EnsureSuccessStatusCode();
 
@@ -57,10 +57,9 @@ namespace Terminal_WinForms_App.Services {
 
         public async Task<bool> CheckPhoneNumberRequest(string phoneNumber) {
             string terminalPasswordDecrypted = AesEncryptionHelper.DecryptString(terminalPassword);
-            string msisdnEncrypted = AesEncryptionHelper.EncryptString(phoneNumber, terminalPasswordDecrypted);
-            string serviceKey = "01";
+            string msisdnEncrypted = AesEncryptionHelper.EncryptString(phoneNumber, terminalPasswordDecrypted);            
             CheckDestinationRequest destinationRequest = new CheckDestinationRequest() {
-                ServiceKey = serviceKey,
+                ServiceKey = ServiceKey,
                 MsisdnEncrypted = msisdnEncrypted,
                 Msisdn = phoneNumber,
                 TerminalIdEncrypted = this.terminalIdEncrypted
@@ -92,12 +91,21 @@ namespace Terminal_WinForms_App.Services {
             }
         }
 
-        public void MakePaymentRequest(string phoneNumber, int amount) {
-            Thread.Sleep(2000);
+        public async Task<ForceAddAPIResponse> MakePaymentRequest(string phoneNumber, int amount) {
+            string terminalPasswordDecrypted = AesEncryptionHelper.DecryptString(terminalPassword);
+            string msisdnEncrypted = AesEncryptionHelper.EncryptString(phoneNumber, terminalPasswordDecrypted);
+            var addRequest = new ForceAddRequest() {
+                Amount = amount,
+                Msisdn = phoneNumber,
+                MsisdnEncrypted = msisdnEncrypted,
+                ServiceKey = ServiceKey,                
+                TerminalIdEncrypted = terminalIdEncrypted
+            };
+            return await ForceAddTransactionAsync(addRequest);
         }
 
-        public void CassetteRemovedAndCleanedRequest() { 
-        
+        public void CassetteRemovedAndCleanedRequest() {
+
         }
 
         public void LogWriteRequest(string message, int status) {
