@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;panel_success1.Name" xml:space="preserve">
+    <value>panel_success1</value>
+  </data>
+  <data name="&gt;&gt;panel_success1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_success1.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;panel_success1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
     <value>pictureBox1</value>
   </data>
@@ -127,7 +139,7 @@
     <value>panelMain</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
@@ -150,7 +162,61 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panel_success1</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel_success1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel_success1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="panel_success1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel_success1.Name" xml:space="preserve">
+    <value>panel_success1</value>
+  </data>
+  <data name="&gt;&gt;panel_success1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_success1.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;panel_success1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panel_success1</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 130</value>
@@ -175,7 +241,7 @@
     <value>panelMain</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;time.Name" xml:space="preserve">
     <value>time</value>
@@ -565,7 +631,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelInputPhoneNumber.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>3</value>
   </data>
   <data name="button_number_back.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 40pt</value>
@@ -969,18 +1035,6 @@
   <data name="&gt;&gt;label_confirm_phone_number.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel_confirm_number</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;button_decline_phone_number.Name" xml:space="preserve">
     <value>button_decline_phone_number</value>
   </data>
@@ -991,7 +1045,7 @@
     <value>panel_confirm_number</value>
   </data>
   <data name="&gt;&gt;button_decline_phone_number.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;button_confirm_phone_number.Name" xml:space="preserve">
     <value>button_confirm_phone_number</value>
@@ -1003,6 +1057,18 @@
     <value>panel_confirm_number</value>
   </data>
   <data name="&gt;&gt;button_confirm_phone_number.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel_confirm_number</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="panel_confirm_number.Location" type="System.Drawing.Point, System.Drawing">
@@ -1024,7 +1090,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_confirm_number.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
   <data name="label_confirm_phone_number.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1084,7 +1150,7 @@
     <value>panel_confirm_number</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="button_decline_phone_number.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
@@ -1114,7 +1180,7 @@
     <value>panel_confirm_number</value>
   </data>
   <data name="&gt;&gt;button_decline_phone_number.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="button_confirm_phone_number.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
@@ -1123,10 +1189,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_confirm_phone_number.Location" type="System.Drawing.Point, System.Drawing">
-    <value>595, 358</value>
+    <value>482, 358</value>
   </data>
   <data name="button_confirm_phone_number.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 116</value>
+    <value>480, 116</value>
   </data>
   <data name="button_confirm_phone_number.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1144,7 +1210,7 @@
     <value>panel_confirm_number</value>
   </data>
   <data name="&gt;&gt;button_confirm_phone_number.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;button2.Name" xml:space="preserve">
     <value>button2</value>
@@ -1213,7 +1279,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_accept_payment.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
@@ -1252,10 +1318,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_accept_bill_pay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>414, 327</value>
+    <value>270, 327</value>
   </data>
   <data name="button_accept_bill_pay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 116</value>
+    <value>656, 116</value>
   </data>
   <data name="button_accept_bill_pay.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1335,17 +1401,8 @@
   <data name="&gt;&gt;label_accept_bill_total.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel_success</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="panel_success.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -1357,13 +1414,25 @@
     <value>panel_success</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panel_success</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="panel_success.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 117</value>
   </data>
   <data name="panel_success.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 785</value>
+    <value>1184, 791</value>
   </data>
   <data name="panel_success.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1378,7 +1447,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_success.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1390,7 +1459,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 277</value>
+    <value>24, 286</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>1062, 58</value>
@@ -1411,7 +1480,7 @@
     <value>panel_success</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1420,7 +1489,7 @@
     <value>Microsoft Sans Serif, 30pt</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 213</value>
+    <value>136, 201</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>762, 58</value>
@@ -1441,8 +1510,11 @@
     <value>panel_success</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
+  <metadata name="success_hide_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>223, 1</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1468,6 +1540,12 @@
     <value>timer2</value>
   </data>
   <data name="&gt;&gt;timer2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;success_hide_timer.Name" xml:space="preserve">
+    <value>success_hide_timer</value>
+  </data>
+  <data name="&gt;&gt;success_hide_timer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

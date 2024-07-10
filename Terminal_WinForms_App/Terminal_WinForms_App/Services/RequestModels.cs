@@ -44,6 +44,8 @@ namespace Terminal_WinForms_App.Services {
         public string CheckSum { get; set; }
         [DataMember(Name = "checkSumEncrypted")]
         public string CheckSumEncrypted { get; set; }
+        [DataMember(Name = "encashmentPasscode")]
+        public int EncashmentPasscode { get; set; }
     }
 
     [DataContract]

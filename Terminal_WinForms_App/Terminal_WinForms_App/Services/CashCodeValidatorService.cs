@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using BillValidator.CashCode.Driver;
 using BillValidator.CashCode.Driver.BillsDefinition;
@@ -75,7 +74,11 @@ namespace Terminal_WinForms_App.Services {
 
         public bool EnableBillValidatorCommand() {
             try {
-                _cacheCodeValidator.Enable();
+                var exception = _cacheCodeValidator.Enable();
+                if(exception != null && !String.IsNullOrEmpty(exception.Message)) {
+                    logginService.LogError($"Error {nameof(EnableBillValidatorCommand)}: {exception.Message} {exception.Source}");
+                    return false;
+                }
                 return true;
             } catch(Exception e) {
                 logginService.LogError($"Error: {e.Message}");
@@ -99,10 +102,13 @@ namespace Terminal_WinForms_App.Services {
         }
 
         public bool ConnectCommand() {
-            if(_cacheCodeValidator.IsConnected)
-                return true;
+            if(_cacheCodeValidator.IsConnected) return true;
             try {
-                _cacheCodeValidator.Connect(BillValidatorPort, new TurkmenBillsDefinition());
+                var exception = _cacheCodeValidator.Connect(BillValidatorPort, new TurkmenBillsDefinition());
+                if(exception != null && !String.IsNullOrEmpty(exception.Message)) {
+                    logginService.LogError($"Error Connecting to BillValidator: {exception.Message} {exception.Source}");
+                    return false;
+                }
             } catch(Exception e) {
                 logginService.LogError($"Error: {e.Message}");
                 return false;
@@ -112,13 +118,13 @@ namespace Terminal_WinForms_App.Services {
                     _cacheCodeValidator.PowerUp();
                     _cacheCodeValidator.StartListening();
                     return true;
-                }catch(Exception e) {
+                } catch(Exception e) {
                     logginService.LogError($"Could not connect to Cache Validator with port {BillValidatorPort}");
                     return false;
                 }
             } else {
                 logginService.LogWarning($"Could not connect to Cache Validator with port {BillValidatorPort}");
-                return false; 
+                return false;
             }
         }
 

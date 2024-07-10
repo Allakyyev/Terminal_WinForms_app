@@ -74,14 +74,15 @@ namespace Terminal_WinForms_App.Services {
             return false;
         }
 
-        public async Task<bool> AddEnchargement() {
+        public async Task<bool> AddEnchargement(int passCode) {
             string terminalPasswordDecrypted = AesEncryptionHelper.DecryptString(terminalPassword);
             string checkSum = Guid.NewGuid().ToString();
             string checkSumEncrypted = AesEncryptionHelper.EncryptString(checkSum, terminalPasswordDecrypted);
             var addEnchargementRequest = new CreateEncashementRequest() {
                 CheckSum = checkSum,
                 CheckSumEncrypted = checkSumEncrypted,
-                TerminalIdEncrypted = this.terminalIdEncrypted
+                TerminalIdEncrypted = this.terminalIdEncrypted,
+                EncashmentPasscode = passCode
             };
             try {
                 var result = await CreateEnchargementAsync(addEnchargementRequest);

@@ -26,6 +26,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMain = new System.Windows.Forms.Panel();
+            this.panel_success1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.time = new System.Windows.Forms.Label();
@@ -62,7 +64,9 @@
             this.panel_success = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.success_hide_timer = new System.Windows.Forms.Timer(this.components);
             this.panelMain.SuspendLayout();
+            this.panel_success1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel_actions.SuspendLayout();
@@ -74,9 +78,21 @@
             // 
             // panelMain
             // 
+            this.panelMain.Controls.Add(this.panel_success1);
             this.panelMain.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.panelMain, "panelMain");
             this.panelMain.Name = "panelMain";
+            // 
+            // panel_success1
+            // 
+            this.panel_success1.Controls.Add(this.label5);
+            resources.ApplyResources(this.panel_success1, "panel_success1");
+            this.panel_success1.Name = "panel_success1";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
             // 
             // pictureBox1
             // 
@@ -277,9 +293,9 @@
             // panel_confirm_number
             // 
             this.panel_confirm_number.Controls.Add(this.label_confirm_phone_number);
-            this.panel_confirm_number.Controls.Add(this.label2);
             this.panel_confirm_number.Controls.Add(this.button_decline_phone_number);
             this.panel_confirm_number.Controls.Add(this.button_confirm_phone_number);
+            this.panel_confirm_number.Controls.Add(this.label2);
             resources.ApplyResources(this.panel_confirm_number, "panel_confirm_number");
             this.panel_confirm_number.Name = "panel_confirm_number";
             // 
@@ -354,25 +370,28 @@
             // panel_success
             // 
             this.panel_success.BackColor = System.Drawing.Color.Green;
-            this.panel_success.Controls.Add(this.label3);
-            this.panel_success.Controls.Add(this.label4);
             resources.ApplyResources(this.panel_success, "panel_success");
+            this.panel_success.Controls.Add(this.label4);
+            this.panel_success.Controls.Add(this.label3);
             this.panel_success.Name = "panel_success";
             this.panel_success.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label4
             // 
-            this.label4.AllowDrop = true;
             resources.ApplyResources(this.label4, "label4");
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Name = "label4";
             // 
             // label3
             // 
-            this.label3.AllowDrop = true;
             resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Name = "label3";
+            // 
+            // success_hide_timer
+            // 
+            this.success_hide_timer.Interval = 5000;
+            this.success_hide_timer.Tick += new System.EventHandler(this.success_hide_timer_Tick);
             // 
             // Form1
             // 
@@ -381,19 +400,22 @@
             this.ControlBox = false;
             this.Controls.Add(this.panel_actions);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel_confirm_number);
+            this.Controls.Add(this.panelInputPhoneNumber);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel_success);
             this.Controls.Add(this.panel_accept_payment);
-            this.Controls.Add(this.panel_confirm_number);
-            this.Controls.Add(this.panelInputPhoneNumber);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.panelMain.ResumeLayout(false);
+            this.panel_success1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -449,6 +471,9 @@
         private System.Windows.Forms.Panel panel_success;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel_success1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Timer success_hide_timer;
     }
 }
 

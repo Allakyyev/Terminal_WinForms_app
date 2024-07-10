@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Reflection.Emit;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Terminal_WinForms_App.Services;
 
@@ -69,6 +71,8 @@ namespace Terminal_WinForms_App {
                     panel_actions.Visible = true;
                     panel_actions.BringToFront();
                     currentPanel = Panels.PhoneInput;
+                    button_confirm_phone_number.Enabled = true;
+                    button_confirm_phone_number.Text = "Подтвердить";
                     break;
                 case Panels.ConfirmNumber:
                     panel_confirm_number.Visible = true;
@@ -80,13 +84,21 @@ namespace Terminal_WinForms_App {
                     panel_accept_payment.Visible = true;
                     panel_accept_payment.BringToFront();
                     currentPanel = Panels.AcceptPayment;
+                    button_confirm_phone_number.Enabled = true;
+                    button_confirm_phone_number.Text = "Подтвердить";
+                    UpdateLabelText(this.cashCodeValidatorService.CollectedMoneySum.ToString() + "  TMT");
+                    this.cashCodeValidatorService.ResetCollectedMoneySumCommand();
                     break;
                 case Panels.Success:
                     panel_success.Visible = true;
                     panel_success.BringToFront();
-                    currentPanel = Panels.AcceptPayment;
-                    Thread.Sleep(5000);
-                    switchToPanel(Panels.Main);
+                    currentPanel = Panels.AcceptPayment;                   
+                    //Thread.Sleep(5000);
+                    button_accept_bill_pay.Enabled = true;
+                    button_accept_bill_pay.Text = "Оплатить";
+                    button2.Enabled = true;
+                    success_hide_timer.Start();
+                    //switchToPanel(Panels.Main);
                     break;
             }
             timer2.Start();
@@ -168,7 +180,7 @@ namespace Terminal_WinForms_App {
         }
 
         private void pictureBox1_Click(object sender, EventArgs e) {
-            if(this.cashCodeValidatorService.ConnectCommand())
+            if(this.cashCodeValidatorService.ConnectCommand())                
                 switchToPanel(Panels.PhoneInput);
         }
 
@@ -192,6 +204,9 @@ namespace Terminal_WinForms_App {
         }
 
         private async void button_confirm_phone_number_Click(object sender, EventArgs e) {
+            button_confirm_phone_number.Enabled = false;
+            button_confirm_phone_number.Text = "Загружается...";
+            UpdateLabelText(this.cashCodeValidatorService.CollectedMoneySum.ToString() + "  TMT");
             string phoneNumber = label_confirm_phone_number.Text.Replace("+993", "993");
             phoneNumber = phoneNumber.Replace("-", "");
             phoneNumber = phoneNumber.Replace("_", "");
@@ -227,8 +242,11 @@ namespace Terminal_WinForms_App {
                 switchToPanel(Panels.Main);
             }
         }
-
+        
         private async void button_accept_bill_pay_ClickAsync(object sender, EventArgs e) {
+            button_accept_bill_pay.Enabled = false;
+            button_accept_bill_pay.Text = "Обрабатывается...";
+            button2.Enabled = false;
             this.cashCodeValidatorService.DisableBillValidatorCommand();
             if(this.cashCodeValidatorService.CollectedMoneySum <= 0) {
                 switchToPanel(Panels.Main);
@@ -240,6 +258,7 @@ namespace Terminal_WinForms_App {
                 var result = await backEndRequestService.MakePaymentRequest(phoneNumber, this.cashCodeValidatorService.CollectedMoneySum * 100);
                 // TODO 
                 // Check result.Success and take appropriate measures to tackle fail situation 
+                this.cashCodeValidatorService.ResetCollectedMoneySumCommand();
                 switchToPanel(Panels.Success);
             }
         }
@@ -252,6 +271,18 @@ namespace Terminal_WinForms_App {
                 this.cashCodeValidatorService.DisableBillValidatorCommand();
                 switchToPanel(Panels.Main);
             }
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e) {
+            if(e.Alt && e.Control && e.KeyCode == Keys.A) {
+                Form2 form2 = new Form2(backEndRequestService);
+                form2.ShowDialog();
+            }
+        }
+
+        private void success_hide_timer_Tick(object sender, EventArgs e) {
+            switchToPanel(Panels.Main);
+            success_hide_timer.Stop();
         }
     }
 }
