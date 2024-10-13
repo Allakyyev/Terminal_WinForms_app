@@ -41,6 +41,7 @@ namespace Terminal_WinForms_App.Services {
 
             } else if(e.Status == BillRecievedStatus.Accepted) {
                 CollectedMoneySum += e.Bill.MoneyValue;
+                CurrentState.CurrentSum += e.Bill.MoneyValue;
                 if(this.onBillAccepted != null)
                     this.onBillAccepted(e.Bill.MoneyValue);
             }

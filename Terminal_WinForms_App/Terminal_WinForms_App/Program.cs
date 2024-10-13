@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using Terminal_WinForms_App.Services;
@@ -18,7 +19,7 @@ namespace Terminal_WinForms_App {
         /// </summary>
         /// 
         [STAThread]
-        static void Main() {
+        static async Task Main() {
             //string terminalId = ConfigurationManager.AppSettings["TerminalId"];
             //string terminalKey = ConfigurationManager.AppSettings["TerminalKey"];
             //string baseUri = ConfigurationManager.AppSettings["BackendBaseUri"];
@@ -26,10 +27,17 @@ namespace Terminal_WinForms_App {
             if(!File.Exists(ConfigFilePath)) {
                 return;
             }
-
             var json = File.ReadAllText(ConfigFilePath);
             var config = JsonConvert.DeserializeObject<Config>(json);
-            //var backEnd = new BackEndRequestService(config.BackendBaseUri, config.TerminalId, config.TerminalKey);
+            var backEndRequestService = new BackEndRequestService(config.BackendBaseUri, config.TerminalId, config.TerminalKey);
+            var result = await backEndRequestService.RegisterTerminalResuest(new RegisterTerminalRequest() {
+                TerminalId = config.TerminalId,
+                MotherboardId = DeviceValidationService.GetMotherboardSerialNumber(),
+                CpuId = DeviceValidationService.GetProcessorId()
+            });
+            if(!result.Success) {
+                throw new Exception("Some thing went wrong");                
+            }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1(config.TerminalId, config.TerminalKey, config.BackendBaseUri, config.ComPort));

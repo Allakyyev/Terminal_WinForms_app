@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Reflection.Emit;
-using System.Threading;
-using System.Threading.Tasks;
+using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Terminal_WinForms_App.Services;
 
@@ -21,6 +21,67 @@ namespace Terminal_WinForms_App {
         private BackEndRequestService backEndRequestService;
         private CashCodeValidatorService cashCodeValidatorService;
         private LoggingService loggingService;
+
+        private const int WM_DEVICECHANGE = 0x0219;
+        private const int DBT_DEVICEARRIVAL = 0x8000;
+        private const int DBT_DEVICEREMOVECOMPLETE = 0x8004;
+
+        protected override void WndProc(ref Message m) {
+            base.WndProc(ref m);
+
+            if(m.Msg == WM_DEVICECHANGE) {
+                if((int)m.WParam == DBT_DEVICEARRIVAL) {
+                    string usbDriveLetter = GetUsbDriveLetter();
+                    if(!string.IsNullOrEmpty(usbDriveLetter)) {
+                        SearchFileOnUsb(usbDriveLetter);
+                    }
+                } else if((int)m.WParam == DBT_DEVICEREMOVECOMPLETE) {
+                }
+            }
+        }
+
+        private string GetUsbDriveLetter() {
+            DriveInfo[] drives = DriveInfo.GetDrives();
+            DriveInfo usbDrive = drives.FirstOrDefault(d => d.DriveType == DriveType.Removable && d.IsReady);
+
+            if(usbDrive != null) {
+                return usbDrive.RootDirectory.FullName;
+            }
+
+            return null;
+        }
+
+        private void SearchFileOnUsb(string driveLetter) {
+            try {
+                string[] files = Directory.GetFiles(driveLetter, "*.txt");
+                if(files.Length > 0) {
+                    foreach(string file in files) {
+                        string fileContent = File.ReadAllText(file);
+
+                        string terminalIdPattern = @"TerminalId:\s*([a-zA-Z0-9-]+)";
+                        string terminalKeyPattern = @"TerminalKey:\s*([a-zA-Z0-9\+/=]+)";
+                        string encashmentCodePattern = @"Encashment Code:\s*(\d+)";
+                        Match terminalIdMatch = Regex.Match(fileContent, terminalIdPattern);
+                        Match terminalKeyMatch = Regex.Match(fileContent, terminalKeyPattern);
+                        Match encashmentCodeMatch = Regex.Match(fileContent, encashmentCodePattern);
+
+                        if(terminalIdMatch.Success && terminalKeyMatch.Success && encashmentCodeMatch.Success) {
+                            string terminalId = terminalIdMatch.Groups[1].Value;
+                            string terminalKey = terminalKeyMatch.Groups[1].Value;
+                            string encashmentCode = encashmentCodeMatch.Groups[1].Value;
+                            if(this.terminal_Id == terminalId && this.terminal_Key == terminalKey) {
+                                Form2 form2 = new Form2(backEndRequestService);
+                                form2.SetEncashmentCode(encashmentCode);
+                                form2.ShowDialog();
+                            }
+
+                        }
+                    }
+                }
+            } catch(Exception ex) {
+            }
+        }
+
         public Form1(string terminalId, string terminalKey, string baseUri, string comPort) {
             this.terminal_Id = terminalId;
             this.terminal_Key = terminalKey;
@@ -92,7 +153,7 @@ namespace Terminal_WinForms_App {
                 case Panels.Success:
                     panel_success.Visible = true;
                     panel_success.BringToFront();
-                    currentPanel = Panels.AcceptPayment;                   
+                    currentPanel = Panels.AcceptPayment;
                     //Thread.Sleep(5000);
                     button_accept_bill_pay.Enabled = true;
                     button_accept_bill_pay.Text = "Оплатить";
@@ -180,7 +241,7 @@ namespace Terminal_WinForms_App {
         }
 
         private void pictureBox1_Click(object sender, EventArgs e) {
-            if(this.cashCodeValidatorService.ConnectCommand())                
+            if(this.cashCodeValidatorService.ConnectCommand())
                 switchToPanel(Panels.PhoneInput);
         }
 
@@ -242,7 +303,7 @@ namespace Terminal_WinForms_App {
                 switchToPanel(Panels.Main);
             }
         }
-        
+
         private async void button_accept_bill_pay_ClickAsync(object sender, EventArgs e) {
             button_accept_bill_pay.Enabled = false;
             button_accept_bill_pay.Text = "Обрабатывается...";

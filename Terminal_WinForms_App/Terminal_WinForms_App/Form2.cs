@@ -7,6 +7,7 @@ namespace Terminal_WinForms_App {
         BackEndRequestService backEndRequestService;
         public Form2(BackEndRequestService _backEndRequestService) {
             InitializeComponent();
+            this.currentTotal.Text = CurrentState.CurrentSum.ToString();
             this.backEndRequestService = _backEndRequestService;
         }
 
@@ -17,9 +18,10 @@ namespace Terminal_WinForms_App {
         private async void Submit_Encashment_Click(object sender, EventArgs e) {
             try {
                 encashmentErrorLabel.Visible = false;
-                bool success = await backEndRequestService.AddEnchargement(int.Parse(encashmentPasscodeTextBox.Text));
+                bool success = await backEndRequestService.AddEnchargement(int.Parse(encashmentPasscodeTextBox.Text), int.Parse(currentTotal.Text));
                 if(success) {
                     encashmentErrorLabel.Text = "";
+                    CurrentState.CurrentSum = 0;
                     this.Close();
                 } else {
                     encashmentErrorLabel.Visible = true;
@@ -27,8 +29,24 @@ namespace Terminal_WinForms_App {
                 }
             } catch {
                 encashmentErrorLabel.Visible = true;
-                encashmentErrorLabel.Text = "Неверный ключ";
+                encashmentErrorLabel.Text = "Неверный ключ или формат суммы";
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e) {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e) {
+
+        }
+
+        private void encashmentPasscodeTextBox_TextChanged(object sender, EventArgs e) {
+
+        }
+
+        public void SetEncashmentCode(string code) {
+            this.encashmentPasscodeTextBox.Text = code;
         }
     }
 }

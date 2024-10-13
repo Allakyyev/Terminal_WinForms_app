@@ -46,6 +46,20 @@ namespace Terminal_WinForms_App.Services {
         public string CheckSumEncrypted { get; set; }
         [DataMember(Name = "encashmentPasscode")]
         public int EncashmentPasscode { get; set; }
+        [DataMember(Name = "sum")]
+        public int Sum { get; set; }
+    }
+
+    [DataContract]
+    public class RegisterTerminalRequest {
+        [DataMember(Name = "terminalId")]
+        public string TerminalId { get; set; }
+
+        [DataMember(Name = "motherboardId")]
+        public string MotherboardId { get; set; }
+
+        [DataMember(Name = "cpuId")]
+        public string CpuId { get; set; }
     }
 
     [DataContract]
@@ -56,5 +70,8 @@ namespace Terminal_WinForms_App.Services {
 
     [DataContract]
     public class AddEnchargementAPIResponse : APIResponseBase { }
+
+    [DataContract]
+    public class RegisterTerminalResponse : APIResponseBase { }
 
 }

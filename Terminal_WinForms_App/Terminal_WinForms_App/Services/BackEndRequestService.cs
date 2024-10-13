@@ -40,11 +40,16 @@ namespace Terminal_WinForms_App.Services {
         }
 
         async Task<CheckDestinationAPIResponse> CheckDestinationAsync(CheckDestinationRequest checkDestinationRequest) {
-            var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/check-destination", checkDestinationRequest);
-            response.EnsureSuccessStatusCode();
+            try {
+                var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/check-destination", checkDestinationRequest);
+                response.EnsureSuccessStatusCode();
 
-            var content = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<CheckDestinationAPIResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonSerializer.Deserialize<CheckDestinationAPIResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            } catch(Exception ex) {
+                int x = 10;
+            }
+            return new CheckDestinationAPIResponse();
         }
 
         async Task<AddEnchargementAPIResponse> CreateEnchargementAsync(CreateEncashementRequest encashementRequest) {
@@ -53,6 +58,14 @@ namespace Terminal_WinForms_App.Services {
 
             var content = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<AddEnchargementAPIResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        }       
+
+        public async Task<RegisterTerminalResponse> RegisterTerminalResuest(RegisterTerminalRequest registerTerminalRequest) {
+            var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/register-terminal", registerTerminalRequest);
+            response.EnsureSuccessStatusCode();
+
+            var content = await response.Content.ReadAsStringAsync();
+            return JsonSerializer.Deserialize<RegisterTerminalResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
         }
 
         public async Task<bool> CheckPhoneNumberRequest(string phoneNumber) {
@@ -74,7 +87,7 @@ namespace Terminal_WinForms_App.Services {
             return false;
         }
 
-        public async Task<bool> AddEnchargement(int passCode) {
+        public async Task<bool> AddEnchargement(int passCode, int totalSum) {
             string terminalPasswordDecrypted = AesEncryptionHelper.DecryptString(terminalPassword);
             string checkSum = Guid.NewGuid().ToString();
             string checkSumEncrypted = AesEncryptionHelper.EncryptString(checkSum, terminalPasswordDecrypted);
@@ -82,7 +95,8 @@ namespace Terminal_WinForms_App.Services {
                 CheckSum = checkSum,
                 CheckSumEncrypted = checkSumEncrypted,
                 TerminalIdEncrypted = this.terminalIdEncrypted,
-                EncashmentPasscode = passCode
+                EncashmentPasscode = passCode,
+                Sum = totalSum
             };
             try {
                 var result = await CreateEnchargementAsync(addEnchargementRequest);
