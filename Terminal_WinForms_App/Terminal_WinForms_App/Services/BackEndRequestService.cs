@@ -32,11 +32,16 @@ namespace Terminal_WinForms_App.Services {
         }
 
         async Task<ForceAddAPIResponse> ForceAddTransactionAsync(ForceAddRequest forceAddRequest) {
-            var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/force-add", forceAddRequest);
-            response.EnsureSuccessStatusCode();
+            try {
+                var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/force-add", forceAddRequest);
+                response.EnsureSuccessStatusCode();
 
-            var content = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<ForceAddAPIResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonSerializer.Deserialize<ForceAddAPIResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            } catch(System.Net.Http.HttpRequestException e) {
+                await logger.LogWarning($"Force-Add Error: {e.Message} \n Number: {forceAddRequest.Msisdn} \n {forceAddRequest.Amount}");
+            }
+            return new ForceAddAPIResponse();
         }
 
         async Task<CheckDestinationAPIResponse> CheckDestinationAsync(CheckDestinationRequest checkDestinationRequest) {
@@ -47,30 +52,51 @@ namespace Terminal_WinForms_App.Services {
                 var content = await response.Content.ReadAsStringAsync();
                 return JsonSerializer.Deserialize<CheckDestinationAPIResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
             } catch(Exception ex) {
-                int x = 10;
+                await logger.LogWarning($"Check-Destination Error: {ex.Message} \n Number: {checkDestinationRequest.Msisdn}");
             }
             return new CheckDestinationAPIResponse();
         }
 
         async Task<AddEnchargementAPIResponse> CreateEnchargementAsync(CreateEncashementRequest encashementRequest) {
-            var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/add-enchargement", encashementRequest);
-            response.EnsureSuccessStatusCode();
+            try {
+                var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/add-enchargement", encashementRequest);
+                response.EnsureSuccessStatusCode();
 
-            var content = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<AddEnchargementAPIResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-        }       
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonSerializer.Deserialize<AddEnchargementAPIResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            } catch(System.Net.Http.HttpRequestException e) {
+                await logger.LogWarning($"Enchargement Error: {e.Message} \n Sum: {encashementRequest.Sum}");
+            }
+            return new AddEnchargementAPIResponse();
+        }
+
+        async Task<LogTerminalResponse> LogTerminalAsync(TerminalLogRequest logRequest) {
+            try {
+                var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/terminal-log", logRequest);
+                response.EnsureSuccessStatusCode();
+
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonSerializer.Deserialize<LogTerminalResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            } catch {
+                return new LogTerminalResponse();
+            }
+        }
 
         public async Task<RegisterTerminalResponse> RegisterTerminalResuest(RegisterTerminalRequest registerTerminalRequest) {
-            var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/register-terminal", registerTerminalRequest);
-            response.EnsureSuccessStatusCode();
+            try {
+                var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/register-terminal", registerTerminalRequest);
+                response.EnsureSuccessStatusCode();
 
-            var content = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<RegisterTerminalResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonSerializer.Deserialize<RegisterTerminalResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            } catch {
+                return new RegisterTerminalResponse();
+            }
         }
 
         public async Task<bool> CheckPhoneNumberRequest(string phoneNumber) {
             string terminalPasswordDecrypted = AesEncryptionHelper.DecryptString(terminalPassword);
-            string msisdnEncrypted = AesEncryptionHelper.EncryptString(phoneNumber, terminalPasswordDecrypted);            
+            string msisdnEncrypted = AesEncryptionHelper.EncryptString(phoneNumber, terminalPasswordDecrypted);
             CheckDestinationRequest destinationRequest = new CheckDestinationRequest() {
                 ServiceKey = ServiceKey,
                 MsisdnEncrypted = msisdnEncrypted,
@@ -79,9 +105,13 @@ namespace Terminal_WinForms_App.Services {
             };
             try {
                 var result = await CheckDestinationAsync(destinationRequest);
-                if(result != null) return result.Success;
+
+                if(result != null) {
+                    CurrentState.DealerTotal = result.DealerTotal;
+                    return result.Success;
+                }
             } catch(Exception e) {
-                logger.LogError(e.Message);
+                await logger.LogInfo(e.Message);
                 return false;
             }
             return false;
@@ -113,7 +143,7 @@ namespace Terminal_WinForms_App.Services {
                 Amount = amount,
                 Msisdn = phoneNumber,
                 MsisdnEncrypted = msisdnEncrypted,
-                ServiceKey = ServiceKey,                
+                ServiceKey = ServiceKey,
                 TerminalIdEncrypted = terminalIdEncrypted
             };
             return await ForceAddTransactionAsync(addRequest);
@@ -123,8 +153,14 @@ namespace Terminal_WinForms_App.Services {
 
         }
 
-        public void LogWriteRequest(string message, int status) {
+        public async Task LogWriteRequest(string message, LogType type) {
+            var logRequest = new TerminalLogRequest() { LogInfo = message, Type = type, TerminalIdEncrypted = this.terminalIdEncrypted };
+            var result = await LogTerminalAsync(logRequest);
+        }
 
+        public async Task LogRepaired() {
+            var logRequest = new TerminalLogRequest() { LogInfo = "Работа востановлено", Type = LogType.Repaired, TerminalIdEncrypted = this.terminalIdEncrypted };
+            var result = await LogTerminalAsync(logRequest);
         }
     }
 }

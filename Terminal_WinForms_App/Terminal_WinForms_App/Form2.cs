@@ -25,11 +25,11 @@ namespace Terminal_WinForms_App {
                     this.Close();
                 } else {
                     encashmentErrorLabel.Visible = true;
-                    encashmentErrorLabel.Text = "Неверный ключ";
+                    encashmentErrorLabel.Text = "Неверный ключ или ошибка сервера";
                 }
             } catch {
                 encashmentErrorLabel.Visible = true;
-                encashmentErrorLabel.Text = "Неверный ключ или формат суммы";
+                encashmentErrorLabel.Text = "Неверный ключ или ошибка системы";
             }
         }
 

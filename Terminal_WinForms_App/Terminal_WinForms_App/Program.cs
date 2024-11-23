@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
@@ -30,14 +31,17 @@ namespace Terminal_WinForms_App {
             var json = File.ReadAllText(ConfigFilePath);
             var config = JsonConvert.DeserializeObject<Config>(json);
             var backEndRequestService = new BackEndRequestService(config.BackendBaseUri, config.TerminalId, config.TerminalKey);
-            var result = await backEndRequestService.RegisterTerminalResuest(new RegisterTerminalRequest() {
-                TerminalId = config.TerminalId,
-                MotherboardId = DeviceValidationService.GetMotherboardSerialNumber(),
-                CpuId = DeviceValidationService.GetProcessorId()
-            });
-            if(!result.Success) {
-                throw new Exception("Some thing went wrong");                
+            bool registerTerminalSuccess = false;
+            while(!registerTerminalSuccess) {
+                var result = await backEndRequestService.RegisterTerminalResuest(new RegisterTerminalRequest() {
+                    TerminalId = config.TerminalId,
+                    MotherboardId = DeviceValidationService.GetMotherboardSerialNumber(),
+                    CpuId = DeviceValidationService.GetProcessorId()
+                });
+                registerTerminalSuccess = result.Success;
+                Thread.Sleep(1000);
             }
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1(config.TerminalId, config.TerminalKey, config.BackendBaseUri, config.ComPort));

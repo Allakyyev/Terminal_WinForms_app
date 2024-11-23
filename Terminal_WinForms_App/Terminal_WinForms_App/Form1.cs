@@ -240,8 +240,8 @@ namespace Terminal_WinForms_App {
             label_phone_number.Text = Reverse(s);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e) {
-            if(this.cashCodeValidatorService.ConnectCommand())
+        private async void pictureBox1_Click(object sender, EventArgs e) {
+            if(await this.cashCodeValidatorService.ConnectCommand())
                 switchToPanel(Panels.PhoneInput);
         }
 
@@ -273,7 +273,8 @@ namespace Terminal_WinForms_App {
             phoneNumber = phoneNumber.Replace("_", "");
             phoneNumber = phoneNumber.Replace(" ", "");
             bool checkPhoneValidity = await backEndRequestService.CheckPhoneNumberRequest(phoneNumber);
-            if(checkPhoneValidity && cashCodeValidatorService.ConnectCommand() && cashCodeValidatorService.EnableBillValidatorCommand()) {
+            if(checkPhoneValidity && (await cashCodeValidatorService.ConnectCommand()) && (await cashCodeValidatorService.EnableBillValidatorCommand()) && CurrentState.DealerTotal > 0) {
+                await loggingService.Repaired();
                 label_accept_bill_phone.Text = label_confirm_phone_number.Text;
                 switchToPanel(Panels.AcceptPayment);
             } else {
@@ -297,9 +298,9 @@ namespace Terminal_WinForms_App {
             });
         }
 
-        private void button2_Click(object sender, EventArgs e) {
+        private async void button2_Click(object sender, EventArgs e) {
             if(this.cashCodeValidatorService.CollectedMoneySum <= 0) {
-                this.cashCodeValidatorService.DisableBillValidatorCommand();
+                await this.cashCodeValidatorService.DisableBillValidatorCommand();
                 switchToPanel(Panels.Main);
             }
         }
@@ -308,7 +309,7 @@ namespace Terminal_WinForms_App {
             button_accept_bill_pay.Enabled = false;
             button_accept_bill_pay.Text = "Обрабатывается...";
             button2.Enabled = false;
-            this.cashCodeValidatorService.DisableBillValidatorCommand();
+            await this.cashCodeValidatorService.DisableBillValidatorCommand();
             if(this.cashCodeValidatorService.CollectedMoneySum <= 0) {
                 switchToPanel(Panels.Main);
             } else {
@@ -327,9 +328,9 @@ namespace Terminal_WinForms_App {
         private void panel1_Paint(object sender, PaintEventArgs e) {
         }
 
-        private void timer2_Tick(object sender, EventArgs e) {
+        private async void timer2_Tick(object sender, EventArgs e) {
             if(this.cashCodeValidatorService.CollectedMoneySum <= 0) {
-                this.cashCodeValidatorService.DisableBillValidatorCommand();
+                await this.cashCodeValidatorService.DisableBillValidatorCommand();
                 switchToPanel(Panels.Main);
             }
         }

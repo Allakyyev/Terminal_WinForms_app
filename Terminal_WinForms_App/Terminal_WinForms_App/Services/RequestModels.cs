@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 
 namespace Terminal_WinForms_App.Services {
     [DataContract]
@@ -63,7 +64,19 @@ namespace Terminal_WinForms_App.Services {
     }
 
     [DataContract]
-    public class CheckDestinationAPIResponse : APIResponseBase { }
+    public class TerminalLogRequest : APIRequestBase {
+        [DataMember(Name = "logInfo")]
+        public string LogInfo { get; set; } = String.Empty;
+
+        [DataMember(Name = "type")]
+        public LogType Type { get; set; }
+    }
+
+    [DataContract]
+    public class CheckDestinationAPIResponse : APIResponseBase {
+        [DataMember(Name = "dealerTotal")]
+        public long DealerTotal { get; set; }
+    }
 
     [DataContract]
     public class ForceAddAPIResponse : APIResponseBase { }
@@ -73,5 +86,9 @@ namespace Terminal_WinForms_App.Services {
 
     [DataContract]
     public class RegisterTerminalResponse : APIResponseBase { }
+
+    [DataContract]
+    public class LogTerminalResponse : APIResponseBase { }
+
 
 }

@@ -73,26 +73,26 @@ namespace Terminal_WinForms_App.Services {
 
         }
 
-        public bool EnableBillValidatorCommand() {
+        public async Task<bool> EnableBillValidatorCommand() {
             try {
                 var exception = _cacheCodeValidator.Enable();
                 if(exception != null && !String.IsNullOrEmpty(exception.Message)) {
-                    logginService.LogError($"Error {nameof(EnableBillValidatorCommand)}: {exception.Message} {exception.Source}");
+                    await logginService.LogError($"Error {nameof(EnableBillValidatorCommand)}: {exception.Message} {exception.Source}");
                     return false;
                 }
                 return true;
             } catch(Exception e) {
-                logginService.LogError($"Error: {e.Message}");
+                await logginService.LogError($"Error: {e.Message}");
                 return false;
             }
         }
 
-        public bool DisableBillValidatorCommand() {
+        public async Task<bool> DisableBillValidatorCommand() {
             try {
                 _cacheCodeValidator.Disable();
                 return true;
             } catch(Exception e) {
-                logginService.LogError($"Error: {e.Message}");
+                await logginService.LogError($"Error: {e.Message}");
                 return false;
             }
 
@@ -102,16 +102,16 @@ namespace Terminal_WinForms_App.Services {
             CollectedMoneySum = 0;
         }
 
-        public bool ConnectCommand() {
+        public async Task<bool> ConnectCommand() {
             if(_cacheCodeValidator.IsConnected) return true;
             try {
                 var exception = _cacheCodeValidator.Connect(BillValidatorPort, new TurkmenBillsDefinition());
                 if(exception != null && !String.IsNullOrEmpty(exception.Message)) {
-                    logginService.LogError($"Error Connecting to BillValidator: {exception.Message} {exception.Source}");
+                    await logginService.LogError($"Error Connecting to BillValidator: {exception.Message} {exception.Source}");
                     return false;
                 }
             } catch(Exception e) {
-                logginService.LogError($"Error: {e.Message}");
+                await logginService.LogError($"Error: {e.Message}");
                 return false;
             }
             if(_cacheCodeValidator.IsConnected) {
@@ -120,11 +120,11 @@ namespace Terminal_WinForms_App.Services {
                     _cacheCodeValidator.StartListening();
                     return true;
                 } catch(Exception e) {
-                    logginService.LogError($"Could not connect to Cache Validator with port {BillValidatorPort}");
+                    await logginService.LogError($"Could not connect to Cache Validator with port {BillValidatorPort}");
                     return false;
                 }
             } else {
-                logginService.LogWarning($"Could not connect to Cache Validator with port {BillValidatorPort}");
+                await logginService.LogWarning($"Could not connect to Cache Validator with port {BillValidatorPort}");
                 return false;
             }
         }

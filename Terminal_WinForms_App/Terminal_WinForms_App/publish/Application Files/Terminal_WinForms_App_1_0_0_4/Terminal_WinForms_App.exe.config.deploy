@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8.1" />
+    </startup>
+  <appSettings>
+    <add key="TerminalId" value="cd8f8fdc-4108-465a-af7a-ffdc29c7af44" />
+    <add key="TerminalKey" value="DAbN4y+GibJwPWG3Idk9l3om60edhmTbl3ASJqbJGn8cZ3kEPydIhqkZXTFNhYvW" />
+    <add key="BackendBaseUri" value="https://localhost:7148/api/AltynAsyrTerminalAPI" />
+    <add key="ComPort" value="COM8" />
+  </appSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Text.Json" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-8.0.0.3" newVersion="8.0.0.3" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>
