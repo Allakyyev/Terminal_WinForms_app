@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Windows.Forms;
 using Terminal_WinForms_App.Services;
 
@@ -153,7 +154,7 @@ namespace Terminal_WinForms_App {
                 case Panels.Success:
                     panel_success.Visible = true;
                     panel_success.BringToFront();
-                    currentPanel = Panels.AcceptPayment;
+                    currentPanel = Panels.Success;
                     //Thread.Sleep(5000);
                     button_accept_bill_pay.Enabled = true;
                     button_accept_bill_pay.Text = "Оплатить";
@@ -174,7 +175,7 @@ namespace Terminal_WinForms_App {
         }
 
         private void timer1_Tick(object sender, EventArgs e) {
-            time.Text = DateTime.Now.ToString("g");
+            time.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
         }
 
         private void button_number_1_Click(object sender, EventArgs e) {
@@ -345,6 +346,10 @@ namespace Terminal_WinForms_App {
         private void success_hide_timer_Tick(object sender, EventArgs e) {
             switchToPanel(Panels.Main);
             success_hide_timer.Stop();
+        }
+
+        private void label4_Click(object sender, EventArgs e) {
+
         }
     }
 }

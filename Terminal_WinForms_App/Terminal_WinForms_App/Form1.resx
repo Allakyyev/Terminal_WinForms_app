@@ -117,117 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;panel_success1.Name" xml:space="preserve">
-    <value>panel_success1</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;panel_success1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;panel_success1.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;panel_success1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 127</value>
-  </data>
-  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1183, 613</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>panel_success1</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel_success1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel_success1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
-  </data>
-  <data name="panel_success1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel_success1.Name" xml:space="preserve">
-    <value>panel_success1</value>
-  </data>
-  <data name="&gt;&gt;panel_success1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_success1.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;panel_success1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>panel_success1</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 130</value>
+    <value>387, 271</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>385, 206</value>
+    <value>631, 289</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -241,52 +154,34 @@
     <value>panelMain</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;time.Name" xml:space="preserve">
-    <value>time</value>
-  </data>
-  <data name="&gt;&gt;time.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;time.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;time.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 159</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel2</value>
+  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1376, 990</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
   </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1183, 99</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="time.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -294,11 +189,14 @@
   <data name="time.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20pt</value>
   </data>
+  <data name="time.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="time.Location" type="System.Drawing.Point, System.Drawing">
-    <value>834, 33</value>
+    <value>13, 22</value>
   </data>
   <data name="time.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 39</value>
+    <value>0, 46</value>
   </data>
   <data name="time.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -315,83 +213,38 @@
   <data name="&gt;&gt;time.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, -1</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20pt</value>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>474, 33</value>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1376, 167</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 39</value>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Mahabat</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="panel_actions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>panel_actions</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button_to_main.Name" xml:space="preserve">
-    <value>button_to_main</value>
-  </data>
-  <data name="&gt;&gt;button_to_main.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_to_main.Parent" xml:space="preserve">
-    <value>panel_actions</value>
-  </data>
-  <data name="&gt;&gt;button_to_main.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel_actions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 763</value>
-  </data>
-  <data name="panel_actions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1183, 124</value>
-  </data>
-  <data name="panel_actions.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel_actions.Name" xml:space="preserve">
-    <value>panel_actions</value>
-  </data>
-  <data name="&gt;&gt;panel_actions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_actions.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_actions.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
@@ -400,10 +253,13 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>812, 3</value>
+    <value>818, 24</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 116</value>
+    <value>523, 161</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -430,10 +286,13 @@
     <value>NoControl</value>
   </data>
   <data name="button_to_main.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>3, 24</value>
+  </data>
+  <data name="button_to_main.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="button_to_main.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 116</value>
+    <value>540, 161</value>
   </data>
   <data name="button_to_main.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -453,455 +312,38 @@
   <data name="&gt;&gt;button_to_main.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="panel_actions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 949</value>
+  </data>
+  <data name="panel_actions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="panel_actions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1361, 188</value>
+  </data>
+  <data name="panel_actions.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel_actions.Name" xml:space="preserve">
+    <value>panel_actions</value>
+  </data>
+  <data name="&gt;&gt;panel_actions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_actions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_actions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>120, 17</value>
   </metadata>
-  <data name="&gt;&gt;button_number_back.Name" xml:space="preserve">
-    <value>button_number_back</value>
-  </data>
-  <data name="&gt;&gt;button_number_back.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_back.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_back.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button_number_del.Name" xml:space="preserve">
-    <value>button_number_del</value>
-  </data>
-  <data name="&gt;&gt;button_number_del.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_del.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_del.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button_number_0.Name" xml:space="preserve">
-    <value>button_number_0</value>
-  </data>
-  <data name="&gt;&gt;button_number_0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_0.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_0.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button_number_9.Name" xml:space="preserve">
-    <value>button_number_9</value>
-  </data>
-  <data name="&gt;&gt;button_number_9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_9.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_9.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;button_number_8.Name" xml:space="preserve">
-    <value>button_number_8</value>
-  </data>
-  <data name="&gt;&gt;button_number_8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_8.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_8.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;button_number_7.Name" xml:space="preserve">
-    <value>button_number_7</value>
-  </data>
-  <data name="&gt;&gt;button_number_7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_7.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_7.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button_number_6.Name" xml:space="preserve">
-    <value>button_number_6</value>
-  </data>
-  <data name="&gt;&gt;button_number_6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_6.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_6.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;button_number_5.Name" xml:space="preserve">
-    <value>button_number_5</value>
-  </data>
-  <data name="&gt;&gt;button_number_5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_5.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_5.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;button_number_4.Name" xml:space="preserve">
-    <value>button_number_4</value>
-  </data>
-  <data name="&gt;&gt;button_number_4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_4.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_4.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;button_number_3.Name" xml:space="preserve">
-    <value>button_number_3</value>
-  </data>
-  <data name="&gt;&gt;button_number_3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_3.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_3.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;button_number_2.Name" xml:space="preserve">
-    <value>button_number_2</value>
-  </data>
-  <data name="&gt;&gt;button_number_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_2.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_2.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;button_number_1.Name" xml:space="preserve">
-    <value>button_number_1</value>
-  </data>
-  <data name="&gt;&gt;button_number_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_1.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;label_phone_number.Name" xml:space="preserve">
-    <value>label_phone_number</value>
-  </data>
-  <data name="&gt;&gt;label_phone_number.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_phone_number.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;label_phone_number.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="panelInputPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 130</value>
-  </data>
-  <data name="panelInputPhoneNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1180, 610</value>
-  </data>
-  <data name="panelInputPhoneNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panelInputPhoneNumber.Name" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;panelInputPhoneNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelInputPhoneNumber.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelInputPhoneNumber.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button_number_back.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 40pt</value>
-  </data>
-  <data name="button_number_back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_number_back.Location" type="System.Drawing.Point, System.Drawing">
-    <value>668, 494</value>
-  </data>
-  <data name="button_number_back.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
-  </data>
-  <data name="button_number_back.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="button_number_back.Text" xml:space="preserve">
-    <value>&lt;</value>
-  </data>
-  <data name="&gt;&gt;button_number_back.Name" xml:space="preserve">
-    <value>button_number_back</value>
-  </data>
-  <data name="&gt;&gt;button_number_back.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_back.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_back.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button_number_del.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 40pt</value>
-  </data>
-  <data name="button_number_del.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_number_del.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 494</value>
-  </data>
-  <data name="button_number_del.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
-  </data>
-  <data name="button_number_del.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="button_number_del.Text" xml:space="preserve">
-    <value>X</value>
-  </data>
-  <data name="&gt;&gt;button_number_del.Name" xml:space="preserve">
-    <value>button_number_del</value>
-  </data>
-  <data name="&gt;&gt;button_number_del.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_del.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_del.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button_number_0.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 40pt</value>
-  </data>
-  <data name="button_number_0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_number_0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 494</value>
-  </data>
-  <data name="button_number_0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
-  </data>
-  <data name="button_number_0.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="button_number_0.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button_number_0.Name" xml:space="preserve">
-    <value>button_number_0</value>
-  </data>
-  <data name="&gt;&gt;button_number_0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_0.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_0.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button_number_9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 40pt</value>
-  </data>
-  <data name="button_number_9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_number_9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>668, 374</value>
-  </data>
-  <data name="button_number_9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
-  </data>
-  <data name="button_number_9.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="button_number_9.Text" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;button_number_9.Name" xml:space="preserve">
-    <value>button_number_9</value>
-  </data>
-  <data name="&gt;&gt;button_number_9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_9.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_9.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button_number_8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 40pt</value>
-  </data>
-  <data name="button_number_8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_number_8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 374</value>
-  </data>
-  <data name="button_number_8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
-  </data>
-  <data name="button_number_8.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="button_number_8.Text" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;button_number_8.Name" xml:space="preserve">
-    <value>button_number_8</value>
-  </data>
-  <data name="&gt;&gt;button_number_8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_8.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_8.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="button_number_7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 40pt</value>
-  </data>
-  <data name="button_number_7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_number_7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 374</value>
-  </data>
-  <data name="button_number_7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
-  </data>
-  <data name="button_number_7.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="button_number_7.Text" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;button_number_7.Name" xml:space="preserve">
-    <value>button_number_7</value>
-  </data>
-  <data name="&gt;&gt;button_number_7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_7.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_7.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="button_number_6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 40pt</value>
-  </data>
-  <data name="button_number_6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_number_6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>668, 252</value>
-  </data>
-  <data name="button_number_6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
-  </data>
-  <data name="button_number_6.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="button_number_6.Text" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;button_number_6.Name" xml:space="preserve">
-    <value>button_number_6</value>
-  </data>
-  <data name="&gt;&gt;button_number_6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_6.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_6.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="button_number_5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 40pt</value>
-  </data>
-  <data name="button_number_5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_number_5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 252</value>
-  </data>
-  <data name="button_number_5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
-  </data>
-  <data name="button_number_5.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="button_number_5.Text" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button_number_5.Name" xml:space="preserve">
-    <value>button_number_5</value>
-  </data>
-  <data name="&gt;&gt;button_number_5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_5.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_5.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="button_number_4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 40pt</value>
-  </data>
-  <data name="button_number_4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_number_4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 252</value>
-  </data>
-  <data name="button_number_4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
-  </data>
-  <data name="button_number_4.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="button_number_4.Text" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;button_number_4.Name" xml:space="preserve">
-    <value>button_number_4</value>
-  </data>
-  <data name="&gt;&gt;button_number_4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_number_4.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
-  </data>
-  <data name="&gt;&gt;button_number_4.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="panelInputPhoneNumber.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="button_number_3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 40pt</value>
@@ -910,10 +352,13 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>668, 130</value>
+    <value>484, 4</value>
+  </data>
+  <data name="button_number_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="button_number_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
+    <value>170, 145</value>
   </data>
   <data name="button_number_3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -928,49 +373,58 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button_number_3.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_number_3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>0</value>
   </data>
-  <data name="button_number_2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="button_number_back.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 40pt</value>
   </data>
-  <data name="button_number_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button_number_back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button_number_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 130</value>
+  <data name="button_number_back.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 460</value>
   </data>
-  <data name="button_number_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
+  <data name="button_number_back.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="button_number_2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="button_number_back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 145</value>
   </data>
-  <data name="button_number_2.Text" xml:space="preserve">
-    <value>2</value>
+  <data name="button_number_back.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="&gt;&gt;button_number_2.Name" xml:space="preserve">
-    <value>button_number_2</value>
+  <data name="button_number_back.Text" xml:space="preserve">
+    <value>&lt;</value>
   </data>
-  <data name="&gt;&gt;button_number_2.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_number_back.Name" xml:space="preserve">
+    <value>button_number_back</value>
+  </data>
+  <data name="&gt;&gt;button_number_back.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button_number_2.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
+  <data name="&gt;&gt;button_number_back.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="&gt;&gt;button_number_2.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;button_number_back.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="button_number_1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 40pt</value>
   </data>
+  <data name="button_number_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="button_number_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 130</value>
+    <value>130, 4</value>
+  </data>
+  <data name="button_number_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="button_number_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 116</value>
+    <value>170, 145</value>
   </data>
   <data name="button_number_1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -985,10 +439,331 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button_number_1.Parent" xml:space="preserve">
-    <value>panelInputPhoneNumber</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_number_1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button_number_del.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 40pt</value>
+  </data>
+  <data name="button_number_del.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_number_del.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 460</value>
+  </data>
+  <data name="button_number_del.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="button_number_del.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 145</value>
+  </data>
+  <data name="button_number_del.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="button_number_del.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="&gt;&gt;button_number_del.Name" xml:space="preserve">
+    <value>button_number_del</value>
+  </data>
+  <data name="&gt;&gt;button_number_del.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_number_del.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_number_del.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button_number_2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 40pt</value>
+  </data>
+  <data name="button_number_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_number_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>307, 4</value>
+  </data>
+  <data name="button_number_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="button_number_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 145</value>
+  </data>
+  <data name="button_number_2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button_number_2.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_number_2.Name" xml:space="preserve">
+    <value>button_number_2</value>
+  </data>
+  <data name="&gt;&gt;button_number_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_number_2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_number_2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button_number_0.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 40pt</value>
+  </data>
+  <data name="button_number_0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_number_0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>307, 460</value>
+  </data>
+  <data name="button_number_0.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="button_number_0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 145</value>
+  </data>
+  <data name="button_number_0.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="button_number_0.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_number_0.Name" xml:space="preserve">
+    <value>button_number_0</value>
+  </data>
+  <data name="&gt;&gt;button_number_0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_number_0.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_number_0.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button_number_4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 40pt</value>
+  </data>
+  <data name="button_number_4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_number_4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 157</value>
+  </data>
+  <data name="button_number_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="button_number_4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 145</value>
+  </data>
+  <data name="button_number_4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="button_number_4.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button_number_4.Name" xml:space="preserve">
+    <value>button_number_4</value>
+  </data>
+  <data name="&gt;&gt;button_number_4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_number_4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_number_4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button_number_9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 40pt</value>
+  </data>
+  <data name="button_number_9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_number_9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 310</value>
+  </data>
+  <data name="button_number_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="button_number_9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 145</value>
+  </data>
+  <data name="button_number_9.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
+  </data>
+  <data name="button_number_9.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;button_number_9.Name" xml:space="preserve">
+    <value>button_number_9</value>
+  </data>
+  <data name="&gt;&gt;button_number_9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_number_9.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_number_9.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="button_number_5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 40pt</value>
+  </data>
+  <data name="button_number_5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_number_5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>307, 157</value>
+  </data>
+  <data name="button_number_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="button_number_5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 145</value>
+  </data>
+  <data name="button_number_5.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="button_number_5.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;button_number_5.Name" xml:space="preserve">
+    <value>button_number_5</value>
+  </data>
+  <data name="&gt;&gt;button_number_5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_number_5.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_number_5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="button_number_8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 40pt</value>
+  </data>
+  <data name="button_number_8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_number_8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>307, 310</value>
+  </data>
+  <data name="button_number_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="button_number_8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 145</value>
+  </data>
+  <data name="button_number_8.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="button_number_8.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;button_number_8.Name" xml:space="preserve">
+    <value>button_number_8</value>
+  </data>
+  <data name="&gt;&gt;button_number_8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_number_8.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_number_8.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="button_number_6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 40pt</value>
+  </data>
+  <data name="button_number_6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_number_6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 157</value>
+  </data>
+  <data name="button_number_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="button_number_6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 145</value>
+  </data>
+  <data name="button_number_6.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="button_number_6.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;button_number_6.Name" xml:space="preserve">
+    <value>button_number_6</value>
+  </data>
+  <data name="&gt;&gt;button_number_6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_number_6.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_number_6.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="button_number_7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 40pt</value>
+  </data>
+  <data name="button_number_7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_number_7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 310</value>
+  </data>
+  <data name="button_number_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="button_number_7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 145</value>
+  </data>
+  <data name="button_number_7.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="button_number_7.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;button_number_7.Name" xml:space="preserve">
+    <value>button_number_7</value>
+  </data>
+  <data name="&gt;&gt;button_number_7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_number_7.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_number_7.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 170</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>798, 611</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>panelInputPhoneNumber</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_phone_number.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="label_phone_number.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1000,10 +775,10 @@
     <value>NoControl</value>
   </data>
   <data name="label_phone_number.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 9</value>
+    <value>310, 29</value>
   </data>
   <data name="label_phone_number.Size" type="System.Drawing.Size, System.Drawing">
-    <value>788, 97</value>
+    <value>944, 115</value>
   </data>
   <data name="label_phone_number.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1021,118 +796,52 @@
     <value>panelInputPhoneNumber</value>
   </data>
   <data name="&gt;&gt;label_phone_number.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;label_confirm_phone_number.Name" xml:space="preserve">
-    <value>label_confirm_phone_number</value>
-  </data>
-  <data name="&gt;&gt;label_confirm_phone_number.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_confirm_phone_number.Parent" xml:space="preserve">
-    <value>panel_confirm_number</value>
-  </data>
-  <data name="&gt;&gt;label_confirm_phone_number.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button_decline_phone_number.Name" xml:space="preserve">
-    <value>button_decline_phone_number</value>
-  </data>
-  <data name="&gt;&gt;button_decline_phone_number.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_decline_phone_number.Parent" xml:space="preserve">
-    <value>panel_confirm_number</value>
-  </data>
-  <data name="&gt;&gt;button_decline_phone_number.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;button_confirm_phone_number.Name" xml:space="preserve">
-    <value>button_confirm_phone_number</value>
+  <data name="panelInputPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 159</value>
   </data>
-  <data name="&gt;&gt;button_confirm_phone_number.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelInputPhoneNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="&gt;&gt;button_confirm_phone_number.Parent" xml:space="preserve">
-    <value>panel_confirm_number</value>
+  <data name="panelInputPhoneNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1376, 821</value>
   </data>
-  <data name="&gt;&gt;button_confirm_phone_number.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel_confirm_number</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+  <data name="panelInputPhoneNumber.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="panel_confirm_number.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 120</value>
+  <data name="&gt;&gt;panelInputPhoneNumber.Name" xml:space="preserve">
+    <value>panelInputPhoneNumber</value>
   </data>
-  <data name="panel_confirm_number.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 620</value>
-  </data>
-  <data name="panel_confirm_number.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel_confirm_number.Name" xml:space="preserve">
-    <value>panel_confirm_number</value>
-  </data>
-  <data name="&gt;&gt;panel_confirm_number.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelInputPhoneNumber.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel_confirm_number.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelInputPhoneNumber.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel_confirm_number.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;panelInputPhoneNumber.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="label_confirm_phone_number.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="panel_confirm_number.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="label_confirm_phone_number.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 44pt</value>
-  </data>
-  <data name="label_confirm_phone_number.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label_confirm_phone_number.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 152</value>
-  </data>
-  <data name="label_confirm_phone_number.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 84</value>
-  </data>
-  <data name="label_confirm_phone_number.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;label_confirm_phone_number.Name" xml:space="preserve">
-    <value>label_confirm_phone_number</value>
-  </data>
-  <data name="&gt;&gt;label_confirm_phone_number.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_confirm_phone_number.Parent" xml:space="preserve">
-    <value>panel_confirm_number</value>
-  </data>
-  <data name="&gt;&gt;label_confirm_phone_number.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 30pt</value>
+    <value>Times New Roman, 32pt, style=Bold</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 25</value>
+    <value>169, 170</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>932, 57</value>
+    <value>1253, 73</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -1150,7 +859,43 @@
     <value>panel_confirm_number</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
+  </data>
+  <data name="label_confirm_phone_number.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="label_confirm_phone_number.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_confirm_phone_number.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 60pt</value>
+  </data>
+  <data name="label_confirm_phone_number.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_confirm_phone_number.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 336</value>
+  </data>
+  <data name="label_confirm_phone_number.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 136</value>
+  </data>
+  <data name="label_confirm_phone_number.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;label_confirm_phone_number.Name" xml:space="preserve">
+    <value>label_confirm_phone_number</value>
+  </data>
+  <data name="&gt;&gt;label_confirm_phone_number.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_confirm_phone_number.Parent" xml:space="preserve">
+    <value>panel_confirm_number</value>
+  </data>
+  <data name="&gt;&gt;label_confirm_phone_number.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button_decline_phone_number.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
   </data>
   <data name="button_decline_phone_number.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
@@ -1159,10 +904,13 @@
     <value>NoControl</value>
   </data>
   <data name="button_decline_phone_number.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 358</value>
+    <value>13, 742</value>
+  </data>
+  <data name="button_decline_phone_number.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="button_decline_phone_number.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 116</value>
+    <value>540, 145</value>
   </data>
   <data name="button_decline_phone_number.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -1180,7 +928,10 @@
     <value>panel_confirm_number</value>
   </data>
   <data name="&gt;&gt;button_decline_phone_number.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="button_confirm_phone_number.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="button_confirm_phone_number.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
@@ -1189,10 +940,13 @@
     <value>NoControl</value>
   </data>
   <data name="button_confirm_phone_number.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 358</value>
+    <value>828, 742</value>
+  </data>
+  <data name="button_confirm_phone_number.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="button_confirm_phone_number.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 116</value>
+    <value>540, 145</value>
   </data>
   <data name="button_confirm_phone_number.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1210,76 +964,37 @@
     <value>panel_confirm_number</value>
   </data>
   <data name="&gt;&gt;button_confirm_phone_number.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>panel_accept_payment</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button_accept_bill_pay.Name" xml:space="preserve">
-    <value>button_accept_bill_pay</value>
-  </data>
-  <data name="&gt;&gt;button_accept_bill_pay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_accept_bill_pay.Parent" xml:space="preserve">
-    <value>panel_accept_payment</value>
-  </data>
-  <data name="&gt;&gt;button_accept_bill_pay.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_phone.Name" xml:space="preserve">
-    <value>label_accept_bill_phone</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_phone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_phone.Parent" xml:space="preserve">
-    <value>panel_accept_payment</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_phone.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_total.Name" xml:space="preserve">
-    <value>label_accept_bill_total</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_total.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_total.Parent" xml:space="preserve">
-    <value>panel_accept_payment</value>
-  </data>
-  <data name="&gt;&gt;label_accept_bill_total.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="panel_accept_payment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 120</value>
+  <data name="panel_confirm_number.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 159</value>
   </data>
-  <data name="panel_accept_payment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1187, 620</value>
+  <data name="panel_confirm_number.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="panel_accept_payment.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="panel_confirm_number.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1376, 990</value>
   </data>
-  <data name="&gt;&gt;panel_accept_payment.Name" xml:space="preserve">
-    <value>panel_accept_payment</value>
+  <data name="panel_confirm_number.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;panel_accept_payment.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel_confirm_number.Name" xml:space="preserve">
+    <value>panel_confirm_number</value>
+  </data>
+  <data name="&gt;&gt;panel_confirm_number.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel_accept_payment.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel_confirm_number.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel_accept_payment.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;panel_confirm_number.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel_accept_payment.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
   </data>
   <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
@@ -1288,10 +1003,13 @@
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 476</value>
+    <value>358, 756</value>
+  </data>
+  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 116</value>
+    <value>738, 174</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1311,6 +1029,9 @@
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="button_accept_bill_pay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <data name="button_accept_bill_pay.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
   </data>
@@ -1318,10 +1039,13 @@
     <value>NoControl</value>
   </data>
   <data name="button_accept_bill_pay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 327</value>
+    <value>358, 366</value>
+  </data>
+  <data name="button_accept_bill_pay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="button_accept_bill_pay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>656, 116</value>
+    <value>738, 172</value>
   </data>
   <data name="button_accept_bill_pay.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1351,10 +1075,10 @@
     <value>NoControl</value>
   </data>
   <data name="label_accept_bill_phone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 35</value>
+    <value>341, 40</value>
   </data>
   <data name="label_accept_bill_phone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 84</value>
+    <value>0, 100</value>
   </data>
   <data name="label_accept_bill_phone.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1371,17 +1095,23 @@
   <data name="&gt;&gt;label_accept_bill_phone.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="label_accept_bill_total.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label_accept_bill_total.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label_accept_bill_total.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 60pt</value>
   </data>
+  <data name="label_accept_bill_total.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label_accept_bill_total.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 169</value>
+    <value>506, 193</value>
   </data>
   <data name="label_accept_bill_total.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 114</value>
+    <value>398, 136</value>
   </data>
   <data name="label_accept_bill_total.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1401,86 +1131,38 @@
   <data name="&gt;&gt;label_accept_bill_total.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="panel_accept_payment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 163</value>
+  </data>
+  <data name="panel_accept_payment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="panel_accept_payment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1376, 986</value>
+  </data>
+  <data name="panel_accept_payment.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel_accept_payment.Name" xml:space="preserve">
+    <value>panel_accept_payment</value>
+  </data>
+  <data name="&gt;&gt;panel_accept_payment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_accept_payment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_accept_payment.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_success.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="panel_success.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panel_success</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel_success</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel_success.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 117</value>
-  </data>
-  <data name="panel_success.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 791</value>
-  </data>
-  <data name="panel_success.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel_success.Name" xml:space="preserve">
-    <value>panel_success</value>
-  </data>
-  <data name="&gt;&gt;panel_success.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_success.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_success.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 30pt</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 286</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1062, 58</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Cпасибо за использование нашего сервиса!</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panel_success</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1488,11 +1170,14 @@
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
   </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 201</value>
+    <value>293, 370</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 58</value>
+    <value>907, 69</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1510,7 +1195,67 @@
     <value>panel_success</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 30pt</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 476</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1265, 69</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Cпасибо за использование нашего сервиса!</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panel_success</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_success.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 159</value>
+  </data>
+  <data name="panel_success.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="panel_success.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1376, 990</value>
+  </data>
+  <data name="panel_success.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel_success.Name" xml:space="preserve">
+    <value>panel_success</value>
+  </data>
+  <data name="&gt;&gt;panel_success.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_success.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_success.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <metadata name="success_hide_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>223, 1</value>
@@ -1522,10 +1267,13 @@
     <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>9, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1221, 920</value>
+    <value>1374, 1150</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>

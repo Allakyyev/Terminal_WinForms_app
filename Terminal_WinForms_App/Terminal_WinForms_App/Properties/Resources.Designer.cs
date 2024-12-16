@@ -63,6 +63,16 @@ namespace Terminal_WinForms_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1527188215 {
+            get {
+                object obj = ResourceManager.GetObject("1527188215", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _6488a521039a550cedb28a4e9920ff6b_fgraphic {
             get {
                 object obj = ResourceManager.GetObject("6488a521039a550cedb28a4e9920ff6b_fgraphic", resourceCulture);
