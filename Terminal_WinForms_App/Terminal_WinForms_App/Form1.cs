@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using System.Threading;
 using System.Windows.Forms;
+using Microsoft.AspNet.SignalR.Client;
 using Terminal_WinForms_App.Services;
 
 namespace Terminal_WinForms_App {
@@ -26,7 +27,8 @@ namespace Terminal_WinForms_App {
         private const int WM_DEVICECHANGE = 0x0219;
         private const int DBT_DEVICEARRIVAL = 0x8000;
         private const int DBT_DEVICEREMOVECOMPLETE = 0x8004;
-
+        private HubConnection connection;
+        private IHubProxy hubProxy;
         protected override void WndProc(ref Message m) {
             base.WndProc(ref m);
 
@@ -83,16 +85,46 @@ namespace Terminal_WinForms_App {
             }
         }
 
-        public Form1(string terminalId, string terminalKey, string baseUri, string comPort) {
+        public Form1(string terminalId, string terminalKey, string baseUri, string comPort, string phoneNumber, string terminalNumber) {
             this.terminal_Id = terminalId;
             this.terminal_Key = terminalKey;
             this.baseUri = baseUri;
             backEndRequestService = new BackEndRequestService(baseUri, terminalId, terminalKey);
             this.loggingService = new LoggingService(backEndRequestService);
-            this.cashCodeValidatorService = new CashCodeValidatorService(comPort, loggingService); ;
+            this.cashCodeValidatorService = new CashCodeValidatorService(comPort, loggingService);
             InitializeComponent();
+            this.contactInputPhoneLabel.Text = phoneNumber;
+            this.terminalNumberLabel.Text = terminalNumber;
+            this.label1.ForeColor = Color.White;
+            this.label1.Text = terminalNumber;
+            LocalizationService.switchLanguage(this, Language.Russian);
+            Cursor.Hide();
             this.cashCodeValidatorService.ConnectCommand();
+            //ConnectHub();
         }
+
+        //private async void ConnectHub() {
+        //    string hubUrl = "http://localhost:5123/CommandHub";
+
+        //    connection = new HubConnection(hubUrl);
+        //    hubProxy = connection.CreateHubProxy("CommandHub");
+
+        //    hubProxy.On<string>("Restart", (command) => {
+        //        if(command == this.terminal_Id)
+        //            Application.Restart();
+        //    });
+        //    hubProxy.On<string>("RestartOS", (command) => {
+        //        if(command == this.terminal_Id)
+        //            RestartOperatingSystem();
+        //    });
+        //    await connection.Start();
+        //}
+        //private void RestartOperatingSystem() {
+        //    Process.Start(new ProcessStartInfo("shutdown", "/r /t 0") {
+        //        CreateNoWindow = true,
+        //        UseShellExecute = false
+        //    });
+        //}
         public void AddPhoneNumberChar(char numberChar) {
             if(label_phone_number.Text.Length == 20) {
                 int replace_index = label_phone_number.Text.IndexOf('_');
@@ -114,12 +146,18 @@ namespace Terminal_WinForms_App {
         public Panels currentPanel = Panels.Main;
         public void switchToPanel(Panels panelName) {
             timer2.Stop();
+            Cursor.Hide();
             panelInputPhoneNumber.Visible = false;
             panelMain.Visible = false;
-            panel_actions.Visible = false;
+            //panel_actions.Visible = false;
             panel_confirm_number.Visible = false;
             panel_accept_payment.Visible = false;
             panel_success.Visible = false;
+            button_accept_bill_pay.Enabled = true;
+            button_accept_bill_pay.Text = LocalizationService.GetLocalizationText(LocalizationKeys.Pay);
+            button_confirm_phone_number.Enabled = true;
+            button_confirm_phone_number.Text = LocalizationService.GetLocalizationText(LocalizationKeys.Continue);
+            button_decline_phone_number.Enabled = true;
             switch(panelName) {
                 case Panels.Main:
                     panelMain.Visible = true;
@@ -130,11 +168,9 @@ namespace Terminal_WinForms_App {
                     label_phone_number.Text = PHONENUMBERINITIALTEXT;
                     panelInputPhoneNumber.Visible = true;
                     panelInputPhoneNumber.BringToFront();
-                    panel_actions.Visible = true;
-                    panel_actions.BringToFront();
+                    //panel_actions.Visible = true;
+                    //panel_actions.BringToFront();
                     currentPanel = Panels.PhoneInput;
-                    button_confirm_phone_number.Enabled = true;
-                    button_confirm_phone_number.Text = "Подтвердить";
                     break;
                 case Panels.ConfirmNumber:
                     panel_confirm_number.Visible = true;
@@ -147,7 +183,7 @@ namespace Terminal_WinForms_App {
                     panel_accept_payment.BringToFront();
                     currentPanel = Panels.AcceptPayment;
                     button_confirm_phone_number.Enabled = true;
-                    button_confirm_phone_number.Text = "Подтвердить";
+                    button_confirm_phone_number.Text = LocalizationService.GetLocalizationText(LocalizationKeys.Continue);
                     UpdateLabelText(this.cashCodeValidatorService.CollectedMoneySum.ToString() + "  TMT");
                     this.cashCodeValidatorService.ResetCollectedMoneySumCommand();
                     break;
@@ -156,9 +192,8 @@ namespace Terminal_WinForms_App {
                     panel_success.BringToFront();
                     currentPanel = Panels.Success;
                     //Thread.Sleep(5000);
-                    button_accept_bill_pay.Enabled = true;
-                    button_accept_bill_pay.Text = "Оплатить";
-                    button2.Enabled = true;
+
+                    button_payPanal_home.Enabled = true;
                     success_hide_timer.Start();
                     //switchToPanel(Panels.Main);
                     break;
@@ -244,6 +279,8 @@ namespace Terminal_WinForms_App {
         private async void pictureBox1_Click(object sender, EventArgs e) {
             if(await this.cashCodeValidatorService.ConnectCommand())
                 switchToPanel(Panels.PhoneInput);
+            else if(await this.cashCodeValidatorService.ConnectCommand(true))
+                switchToPanel(Panels.PhoneInput);
         }
 
         private void Form1_Load(object sender, EventArgs e) {
@@ -267,7 +304,8 @@ namespace Terminal_WinForms_App {
 
         private async void button_confirm_phone_number_Click(object sender, EventArgs e) {
             button_confirm_phone_number.Enabled = false;
-            button_confirm_phone_number.Text = "Загружается...";
+            button_confirm_phone_number.Text = LocalizationService.GetLocalizationText(LocalizationKeys.Loading);
+            button_decline_phone_number.Enabled = false;
             UpdateLabelText(this.cashCodeValidatorService.CollectedMoneySum.ToString() + "  TMT");
             string phoneNumber = label_confirm_phone_number.Text.Replace("+993", "993");
             phoneNumber = phoneNumber.Replace("-", "");
@@ -275,6 +313,10 @@ namespace Terminal_WinForms_App {
             phoneNumber = phoneNumber.Replace(" ", "");
             bool checkPhoneValidity = await backEndRequestService.CheckPhoneNumberRequest(phoneNumber);
             if(checkPhoneValidity && (await cashCodeValidatorService.ConnectCommand()) && (await cashCodeValidatorService.EnableBillValidatorCommand()) && CurrentState.DealerTotal > 0) {
+                await loggingService.Repaired();
+                label_accept_bill_phone.Text = label_confirm_phone_number.Text;
+                switchToPanel(Panels.AcceptPayment);
+            } else if(checkPhoneValidity && (await cashCodeValidatorService.ConnectCommand(true)) && (await cashCodeValidatorService.EnableBillValidatorCommand()) && CurrentState.DealerTotal > 0) {
                 await loggingService.Repaired();
                 label_accept_bill_phone.Text = label_confirm_phone_number.Text;
                 switchToPanel(Panels.AcceptPayment);
@@ -308,8 +350,8 @@ namespace Terminal_WinForms_App {
 
         private async void button_accept_bill_pay_ClickAsync(object sender, EventArgs e) {
             button_accept_bill_pay.Enabled = false;
-            button_accept_bill_pay.Text = "Обрабатывается...";
-            button2.Enabled = false;
+            button_accept_bill_pay.Text = LocalizationService.GetLocalizationText(LocalizationKeys.Processing);
+            button_payPanal_home.Enabled = false;
             await this.cashCodeValidatorService.DisableBillValidatorCommand();
             if(this.cashCodeValidatorService.CollectedMoneySum <= 0) {
                 switchToPanel(Panels.Main);
@@ -344,12 +386,25 @@ namespace Terminal_WinForms_App {
         }
 
         private void success_hide_timer_Tick(object sender, EventArgs e) {
+            LocalizationService.switchLanguage(this, Language.Russian);
             switchToPanel(Panels.Main);
             success_hide_timer.Stop();
         }
 
         private void label4_Click(object sender, EventArgs e) {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e) {
+            LocalizationService.switchLanguage(this, Language.Turkmen);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e) {
+            LocalizationService.switchLanguage(this, Language.Russian);
+        }
+
+        private async void pingTimer_Tick(object sender, EventArgs e) {
+            await backEndRequestService.PingTerminalRequest();
         }
     }
 }

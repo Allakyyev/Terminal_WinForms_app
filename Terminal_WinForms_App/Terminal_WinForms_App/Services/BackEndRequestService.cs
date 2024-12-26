@@ -57,6 +57,19 @@ namespace Terminal_WinForms_App.Services {
             return new CheckDestinationAPIResponse();
         }
 
+        public async Task<PingTerminalResponse> PingTerminalRequest() {
+            try {
+                APIRequestBase pingRequest = new APIRequestBase() { TerminalIdEncrypted = this.terminalIdEncrypted };
+                var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/ping-terminal", pingRequest);
+                response.EnsureSuccessStatusCode();
+
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonSerializer.Deserialize<PingTerminalResponse>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            } catch(Exception ex) {
+              return new PingTerminalResponse();
+            }            
+        }
+
         async Task<AddEnchargementAPIResponse> CreateEnchargementAsync(CreateEncashementRequest encashementRequest) {
             try {
                 var response = await _httpClient.PostAsJsonAsync($"{this.baseUri}/add-enchargement", encashementRequest);

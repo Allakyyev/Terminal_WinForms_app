@@ -16,6 +16,8 @@ namespace Terminal_WinForms_App {
         }
 
         private async void Submit_Encashment_Click(object sender, EventArgs e) {
+            this.Submit_Encashment.Enabled = false;
+            this.Cancel_Encashment.Enabled = false;
             try {
                 encashmentErrorLabel.Visible = false;
                 bool success = await backEndRequestService.AddEnchargement(int.Parse(encashmentPasscodeTextBox.Text), int.Parse(currentTotal.Text));
@@ -23,13 +25,19 @@ namespace Terminal_WinForms_App {
                     encashmentErrorLabel.Text = "";
                     CurrentState.CurrentSum = 0;
                     this.Close();
+                    this.Submit_Encashment.Enabled = true;
+                    this.Cancel_Encashment.Enabled = true;
                 } else {
                     encashmentErrorLabel.Visible = true;
                     encashmentErrorLabel.Text = "Неверный ключ или ошибка сервера";
+                    this.Submit_Encashment.Enabled = true;
+                    this.Cancel_Encashment.Enabled = true;
                 }
             } catch {
                 encashmentErrorLabel.Visible = true;
                 encashmentErrorLabel.Text = "Неверный ключ или ошибка системы";
+                this.Submit_Encashment.Enabled = true;
+                this.Cancel_Encashment.Enabled = true;
             }
         }
 

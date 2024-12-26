@@ -121,26 +121,122 @@
   <data name="panelMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="pictureBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 264</value>
+  </data>
+  <data name="pictureBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 87</value>
+  </data>
+  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 264</value>
+  </data>
+  <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 87</value>
+  </data>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="panel3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="panel3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1223, 242</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+    <value>None</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>387, 271</value>
-  </data>
-  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>397, 380</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>631, 289</value>
+    <value>440, 236</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -154,16 +250,79 @@
     <value>panelMain</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="panel4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 40pt, style=Bold</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>779, 138</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 78</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 159</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>0010</value>
   </data>
-  <data name="panelMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 678</value>
+  </data>
+  <data name="panel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1223, 242</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, -1</value>
   </data>
   <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1376, 990</value>
+    <value>1223, 920</value>
   </data>
   <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -178,10 +337,142 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="panel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="terminalNumberLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="terminalNumberLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 22.2pt</value>
+  </data>
+  <data name="terminalNumberLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="terminalNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1108, 83</value>
+  </data>
+  <data name="terminalNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 42</value>
+  </data>
+  <data name="terminalNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="terminalNumberLabel.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;terminalNumberLabel.Name" xml:space="preserve">
+    <value>terminalNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;terminalNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;terminalNumberLabel.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;terminalNumberLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="terminalNumberTextLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="terminalNumberTextLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 22.2pt</value>
+  </data>
+  <data name="terminalNumberTextLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="terminalNumberTextLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>803, 83</value>
+  </data>
+  <data name="terminalNumberTextLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>299, 42</value>
+  </data>
+  <data name="terminalNumberTextLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="terminalNumberTextLabel.Text" xml:space="preserve">
+    <value>Номер терминала:</value>
+  </data>
+  <data name="&gt;&gt;terminalNumberTextLabel.Name" xml:space="preserve">
+    <value>terminalNumberTextLabel</value>
+  </data>
+  <data name="&gt;&gt;terminalNumberTextLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;terminalNumberTextLabel.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;terminalNumberTextLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="contactInputPhoneLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="contactInputPhoneLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 22.2pt</value>
+  </data>
+  <data name="contactInputPhoneLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="contactInputPhoneLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 83</value>
+  </data>
+  <data name="contactInputPhoneLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 42</value>
+  </data>
+  <data name="contactInputPhoneLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="contactInputPhoneLabel.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;contactInputPhoneLabel.Name" xml:space="preserve">
+    <value>contactInputPhoneLabel</value>
+  </data>
+  <data name="&gt;&gt;contactInputPhoneLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contactInputPhoneLabel.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;contactInputPhoneLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="contactPhone.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="contactPhone.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 22.2pt</value>
+  </data>
+  <data name="contactPhone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="contactPhone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 83</value>
+  </data>
+  <data name="contactPhone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 42</value>
+  </data>
+  <data name="contactPhone.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="contactPhone.Text" xml:space="preserve">
+    <value>Тел:</value>
+  </data>
+  <data name="&gt;&gt;contactPhone.Name" xml:space="preserve">
+    <value>contactPhone</value>
+  </data>
+  <data name="&gt;&gt;contactPhone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contactPhone.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;contactPhone.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="time.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -193,10 +484,10 @@
     <value>NoControl</value>
   </data>
   <data name="time.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 22</value>
+    <value>13, 20</value>
   </data>
   <data name="time.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 46</value>
+    <value>0, 39</value>
   </data>
   <data name="time.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -211,16 +502,13 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;time.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, -1</value>
   </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1376, 167</value>
+    <value>1223, 162</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -235,7 +523,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -243,83 +531,11 @@
   <data name="panel_actions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 30pt</value>
-  </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>818, 24</value>
-  </data>
-  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>523, 161</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Продолжить </value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>panel_actions</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button_to_main.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 30pt</value>
-  </data>
-  <data name="button_to_main.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_to_main.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 24</value>
-  </data>
-  <data name="button_to_main.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="button_to_main.Size" type="System.Drawing.Size, System.Drawing">
-    <value>540, 161</value>
-  </data>
-  <data name="button_to_main.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="button_to_main.Text" xml:space="preserve">
-    <value>Главная</value>
-  </data>
-  <data name="&gt;&gt;button_to_main.Name" xml:space="preserve">
-    <value>button_to_main</value>
-  </data>
-  <data name="&gt;&gt;button_to_main.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_to_main.Parent" xml:space="preserve">
-    <value>panel_actions</value>
-  </data>
-  <data name="&gt;&gt;button_to_main.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="panel_actions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 949</value>
-  </data>
-  <data name="panel_actions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>8, 759</value>
   </data>
   <data name="panel_actions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1361, 188</value>
+    <value>1207, 0</value>
   </data>
   <data name="panel_actions.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -334,7 +550,73 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_actions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button_continue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="button_continue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 30pt</value>
+  </data>
+  <data name="button_continue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_continue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>740, 631</value>
+  </data>
+  <data name="button_continue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>465, 129</value>
+  </data>
+  <data name="button_continue.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="button_continue.Text" xml:space="preserve">
+    <value>Продолжить </value>
+  </data>
+  <data name="&gt;&gt;button_continue.Name" xml:space="preserve">
+    <value>button_continue</value>
+  </data>
+  <data name="&gt;&gt;button_continue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_continue.Parent" xml:space="preserve">
+    <value>panelInputPhoneNumber</value>
+  </data>
+  <data name="&gt;&gt;button_continue.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="button_to_main.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="button_to_main.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 30pt</value>
+  </data>
+  <data name="button_to_main.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_to_main.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 630</value>
+  </data>
+  <data name="button_to_main.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 129</value>
+  </data>
+  <data name="button_to_main.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="button_to_main.Text" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+  <data name="&gt;&gt;button_to_main.Name" xml:space="preserve">
+    <value>button_to_main</value>
+  </data>
+  <data name="&gt;&gt;button_to_main.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_to_main.Parent" xml:space="preserve">
+    <value>panelInputPhoneNumber</value>
+  </data>
+  <data name="&gt;&gt;button_to_main.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>120, 17</value>
@@ -352,13 +634,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>484, 4</value>
-  </data>
-  <data name="button_number_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>430, 3</value>
   </data>
   <data name="button_number_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -385,13 +664,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_back.Location" type="System.Drawing.Point, System.Drawing">
-    <value>484, 460</value>
-  </data>
-  <data name="button_number_back.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>430, 368</value>
   </data>
   <data name="button_number_back.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_back.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -418,13 +694,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 4</value>
-  </data>
-  <data name="button_number_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>116, 3</value>
   </data>
   <data name="button_number_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -451,13 +724,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_del.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 460</value>
-  </data>
-  <data name="button_number_del.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>116, 368</value>
   </data>
   <data name="button_number_del.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_del.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -484,13 +754,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 4</value>
-  </data>
-  <data name="button_number_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>273, 3</value>
   </data>
   <data name="button_number_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -517,13 +784,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 460</value>
-  </data>
-  <data name="button_number_0.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>273, 368</value>
   </data>
   <data name="button_number_0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_0.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -550,13 +814,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 157</value>
-  </data>
-  <data name="button_number_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>116, 126</value>
   </data>
   <data name="button_number_4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_4.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -583,13 +844,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>484, 310</value>
-  </data>
-  <data name="button_number_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>430, 248</value>
   </data>
   <data name="button_number_9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_9.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -616,13 +874,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 157</value>
-  </data>
-  <data name="button_number_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>273, 126</value>
   </data>
   <data name="button_number_5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_5.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -649,13 +904,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 310</value>
-  </data>
-  <data name="button_number_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>273, 248</value>
   </data>
   <data name="button_number_8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_8.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -682,13 +934,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>484, 157</value>
-  </data>
-  <data name="button_number_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>430, 126</value>
   </data>
   <data name="button_number_6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_6.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -715,13 +964,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_number_7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 310</value>
-  </data>
-  <data name="button_number_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>116, 248</value>
   </data>
   <data name="button_number_7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 145</value>
+    <value>151, 116</value>
   </data>
   <data name="button_number_7.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -742,10 +988,13 @@
     <value>11</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 170</value>
+    <value>305, 136</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>798, 611</value>
+    <value>709, 489</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -760,7 +1009,7 @@
     <value>panelInputPhoneNumber</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="label_phone_number.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -775,10 +1024,10 @@
     <value>NoControl</value>
   </data>
   <data name="label_phone_number.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 29</value>
+    <value>276, 23</value>
   </data>
   <data name="label_phone_number.Size" type="System.Drawing.Size, System.Drawing">
-    <value>944, 115</value>
+    <value>788, 97</value>
   </data>
   <data name="label_phone_number.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -796,16 +1045,13 @@
     <value>panelInputPhoneNumber</value>
   </data>
   <data name="&gt;&gt;label_phone_number.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="panelInputPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 159</value>
-  </data>
-  <data name="panelInputPhoneNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>-1, 148</value>
   </data>
   <data name="panelInputPhoneNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1376, 821</value>
+    <value>1223, 767</value>
   </data>
   <data name="panelInputPhoneNumber.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -820,45 +1066,45 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelInputPhoneNumber.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="panel_confirm_number.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="confirmTextLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="confirmTextLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="confirmTextLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 32pt, style=Bold</value>
   </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="confirmTextLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>169, 170</value>
+  <data name="confirmTextLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 136</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1253, 73</value>
+  <data name="confirmTextLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1055, 62</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+  <data name="confirmTextLabel.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
+  <data name="confirmTextLabel.Text" xml:space="preserve">
     <value>Пожалуйста, подтвердите номер телефона</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;confirmTextLabel.Name" xml:space="preserve">
+    <value>confirmTextLabel</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+  <data name="&gt;&gt;confirmTextLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;confirmTextLabel.Parent" xml:space="preserve">
     <value>panel_confirm_number</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;confirmTextLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="label_confirm_phone_number.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -874,10 +1120,10 @@
     <value>NoControl</value>
   </data>
   <data name="label_confirm_phone_number.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 336</value>
+    <value>255, 269</value>
   </data>
   <data name="label_confirm_phone_number.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 136</value>
+    <value>0, 114</value>
   </data>
   <data name="label_confirm_phone_number.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -904,13 +1150,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_decline_phone_number.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 742</value>
-  </data>
-  <data name="button_decline_phone_number.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>12, 594</value>
   </data>
   <data name="button_decline_phone_number.Size" type="System.Drawing.Size, System.Drawing">
-    <value>540, 145</value>
+    <value>480, 116</value>
   </data>
   <data name="button_decline_phone_number.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -940,13 +1183,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_confirm_phone_number.Location" type="System.Drawing.Point, System.Drawing">
-    <value>828, 742</value>
-  </data>
-  <data name="button_confirm_phone_number.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>736, 594</value>
   </data>
   <data name="button_confirm_phone_number.Size" type="System.Drawing.Size, System.Drawing">
-    <value>540, 145</value>
+    <value>480, 116</value>
   </data>
   <data name="button_confirm_phone_number.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -967,13 +1207,10 @@
     <value>3</value>
   </data>
   <data name="panel_confirm_number.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 159</value>
-  </data>
-  <data name="panel_confirm_number.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>-1, 127</value>
   </data>
   <data name="panel_confirm_number.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1376, 990</value>
+    <value>1223, 792</value>
   </data>
   <data name="panel_confirm_number.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -988,45 +1225,42 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_confirm_number.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="panel_accept_payment.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="button_payPanal_home.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="button_payPanal_home.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
   </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button_payPanal_home.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 756</value>
+  <data name="button_payPanal_home.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 604</value>
   </data>
-  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="button_payPanal_home.Size" type="System.Drawing.Size, System.Drawing">
+    <value>656, 139</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>738, 174</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="button_payPanal_home.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
+  <data name="button_payPanal_home.Text" xml:space="preserve">
     <value>Главная</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;button_payPanal_home.Name" xml:space="preserve">
+    <value>button_payPanal_home</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_payPanal_home.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button_payPanal_home.Parent" xml:space="preserve">
     <value>panel_accept_payment</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button_payPanal_home.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="button_accept_bill_pay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -1039,13 +1273,10 @@
     <value>NoControl</value>
   </data>
   <data name="button_accept_bill_pay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 366</value>
-  </data>
-  <data name="button_accept_bill_pay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>318, 292</value>
   </data>
   <data name="button_accept_bill_pay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>738, 172</value>
+    <value>656, 138</value>
   </data>
   <data name="button_accept_bill_pay.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1075,10 +1306,10 @@
     <value>NoControl</value>
   </data>
   <data name="label_accept_bill_phone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 40</value>
+    <value>303, 32</value>
   </data>
   <data name="label_accept_bill_phone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 100</value>
+    <value>0, 84</value>
   </data>
   <data name="label_accept_bill_phone.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1108,10 +1339,10 @@
     <value>NoControl</value>
   </data>
   <data name="label_accept_bill_total.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 193</value>
+    <value>450, 154</value>
   </data>
   <data name="label_accept_bill_total.Size" type="System.Drawing.Size, System.Drawing">
-    <value>398, 136</value>
+    <value>332, 114</value>
   </data>
   <data name="label_accept_bill_total.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1132,13 +1363,10 @@
     <value>3</value>
   </data>
   <data name="panel_accept_payment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 163</value>
-  </data>
-  <data name="panel_accept_payment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>-1, 130</value>
   </data>
   <data name="panel_accept_payment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1376, 986</value>
+    <value>1223, 789</value>
   </data>
   <data name="panel_accept_payment.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1153,7 +1381,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_accept_payment.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="panel_success.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -1161,86 +1389,83 @@
   <data name="panel_success.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="successLabel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+  <data name="successLabel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="successLabel1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
   </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="successLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>293, 370</value>
+  <data name="successLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 296</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>907, 69</value>
+  <data name="successLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 58</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+  <data name="successLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
+  <data name="successLabel1.Text" xml:space="preserve">
     <value>Операция успешно завершена,</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
+  <data name="&gt;&gt;successLabel1.Name" xml:space="preserve">
+    <value>successLabel1</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+  <data name="&gt;&gt;successLabel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;successLabel1.Parent" xml:space="preserve">
     <value>panel_success</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;successLabel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="successLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="successLabel2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="successLabel2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
   </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="successLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 476</value>
+  <data name="successLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 368</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1265, 69</value>
+  <data name="successLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1062, 58</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+  <data name="successLabel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="successLabel2.Text" xml:space="preserve">
     <value>Cпасибо за использование нашего сервиса!</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;successLabel2.Name" xml:space="preserve">
+    <value>successLabel2</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+  <data name="&gt;&gt;successLabel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;successLabel2.Parent" xml:space="preserve">
     <value>panel_success</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;successLabel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="panel_success.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 159</value>
-  </data>
-  <data name="panel_success.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>-1, 127</value>
   </data>
   <data name="panel_success.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1376, 990</value>
+    <value>1223, 766</value>
   </data>
   <data name="panel_success.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1255,25 +1480,25 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_success.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <metadata name="success_hide_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>223, 1</value>
+    <value>231, 29</value>
+  </metadata>
+  <metadata name="pingTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>446, 29</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>102</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1374, 1150</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>1221, 920</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>
@@ -1294,6 +1519,12 @@
     <value>success_hide_timer</value>
   </data>
   <data name="&gt;&gt;success_hide_timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pingTimer.Name" xml:space="preserve">
+    <value>pingTimer</value>
+  </data>
+  <data name="&gt;&gt;pingTimer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

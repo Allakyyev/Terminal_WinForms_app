@@ -102,8 +102,8 @@ namespace Terminal_WinForms_App.Services {
             CollectedMoneySum = 0;
         }
 
-        public async Task<bool> ConnectCommand() {
-            if(_cacheCodeValidator.IsConnected) return true;
+        public async Task<bool> ConnectCommand(bool force = false) {
+            if(_cacheCodeValidator.IsConnected && !force) return true;
             try {
                 var exception = _cacheCodeValidator.Connect(BillValidatorPort, new TurkmenBillsDefinition());
                 if(exception != null && !String.IsNullOrEmpty(exception.Message)) {
@@ -118,6 +118,7 @@ namespace Terminal_WinForms_App.Services {
                 try {
                     _cacheCodeValidator.PowerUp();
                     _cacheCodeValidator.StartListening();
+                    await logginService.Repaired();
                     return true;
                 } catch(Exception e) {
                     await logginService.LogError($"Could not connect to Cache Validator with port {BillValidatorPort}");

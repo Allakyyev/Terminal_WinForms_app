@@ -12,6 +12,8 @@ namespace Terminal_WinForms_App {
         public string TerminalKey { get; set; }
         public string BackendBaseUri { get; set; }
         public string ComPort { get; set; }
+        public string PhoneNumber { get; set; }
+        public string TerminalNumber { get; set; }
     }
     internal static class Program {
         private const string ConfigFilePath = "config.json";
@@ -49,7 +51,8 @@ namespace Terminal_WinForms_App {
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(config.TerminalId, config.TerminalKey, config.BackendBaseUri, config.ComPort));
+
+            Application.Run(new Form1(config.TerminalId, config.TerminalKey, config.BackendBaseUri, config.ComPort, config.PhoneNumber, config.TerminalNumber));
         }
     }
 }

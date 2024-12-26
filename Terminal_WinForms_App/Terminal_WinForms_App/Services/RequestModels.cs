@@ -90,5 +90,7 @@ namespace Terminal_WinForms_App.Services {
     [DataContract]
     public class LogTerminalResponse : APIResponseBase { }
 
+    [DataContract]
+    public class PingTerminalResponse : APIResponseBase { }
 
 }

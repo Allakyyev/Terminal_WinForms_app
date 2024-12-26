@@ -63,6 +63,26 @@ namespace Terminal_WinForms_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1280x230_bazar {
+            get {
+                object obj = ResourceManager.GetObject("1280x230-bazar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1280x230_sandyk {
+            get {
+                object obj = ResourceManager.GetObject("1280x230-sandyk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1527188215 {
             get {
                 object obj = ResourceManager.GetObject("1527188215", resourceCulture);
@@ -76,6 +96,76 @@ namespace Terminal_WinForms_App.Properties {
         internal static System.Drawing.Bitmap _6488a521039a550cedb28a4e9920ff6b_fgraphic {
             get {
                 object obj = ResourceManager.GetObject("6488a521039a550cedb28a4e9920ff6b_fgraphic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bazar {
+            get {
+                object obj = ResourceManager.GetObject("bazar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bazar1 {
+            get {
+                object obj = ResourceManager.GetObject("bazar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FlagRU {
+            get {
+                object obj = ResourceManager.GetObject("FlagRU", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FlagRU_New {
+            get {
+                object obj = ResourceManager.GetObject("FlagRU_New", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flagTMNew {
+            get {
+                object obj = ResourceManager.GetObject("flagTMNew", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SuccessImg {
+            get {
+                object obj = ResourceManager.GetObject("SuccessImg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TMCellNew {
+            get {
+                object obj = ResourceManager.GetObject("TMCellNew", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -118,13 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="1527188215" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1527188215.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bazar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bazar.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FlagRU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FlagRU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="6488a521039a550cedb28a4e9920ff6b_fgraphic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6488a521039a550cedb28a4e9920ff6b_fgraphic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="flagTMNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flagTMNew1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1280x230-sandyk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1280x230-sandyk1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1527188215" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1527188215.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TMCellNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TMCellNew1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1280x230-bazar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1280x230-bazar1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SuccessImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SuccessImg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FlagRU_New" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FlagRU_New.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bazar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bazar1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
